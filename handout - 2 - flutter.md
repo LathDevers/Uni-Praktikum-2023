@@ -1,6 +1,6 @@
 # Einrichtung der Flutter SDK
 
-Die ausführliche, englischsprachige Dokumentation zur Einrichtung befindet sich auf der offiziellen Webseite:
+Wenn etwas unklar ist, wendet euch bitte an der offiziellen Dokumentation:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://flutter.dev/docs/get-started/install/windows">
@@ -13,22 +13,35 @@ Die ausführliche, englischsprachige Dokumentation zur Einrichtung befindet sich
     <img src="https://seeklogo.com/images/T/tux-logo-AA06C623EC-seeklogo.com.png" height="50" />
 </a>
 
-In dieser Anleitung wird die Installation **auf Windows** beschrieben.
+In dieser Anleitung wird die Installation **für Windows** beschrieben.
 
 ## 1) Flutter SDK herunterladen
 
 Clone die aktuelleste stabile release Version der Flutter SDK in einen gewünschten Installationsordner (z. B. `C:\Users\<your-user-name>\Documents`):
 
+```bash
+git clone https://github.com/flutter/flutter.git -b stable
+```
+
 > ☢️ **WARNUNG** ☢️ Installiere Flutter nicht in einem Ordner wie `C:\Program Files\`, der erhöhte Rechte erfordert.
 
 ## 2) Den Pfad aktualisieren
 
-- Tippe in die Start Suchleiste von Windows `env` ein und wähle **Edit environment variables for your account**.
-- Überprüfe unter **User variables**, ob ein Entrag namens **Path** existiert.
+In Systemsteuerung > Benutzerkonten > Benutzerkonten tippe auf Eigene Umgebungsvariablen ändern.
+
+![](src/SCR-20230302-qkpu.png)
+
+Überprüfe unter **Benutzervariablen**, ob ein Entrag namens **Path** existiert.
   - Wenn der Eintrag existiert: füge den vollen Pfad zu `flutter\bin` mit dem `;` Trennzeichen nach existierenden Werten hinzu.
   - Wenn der Eintrag nicht existiert: erstelle eine neue Variable namens `Path` mit dem vollen Pfad zu `flutter\bin`.
 
+![](src/SCR-20230302-qmuh.png)
+
+![](src/SCR-20230302-qmmv.png)
+
 > ❗️ Alle vorhandenen Konsolenfenster müssen geschlossen und wieder geöffnet werden, damit diese Änderungen wirksam werden.
+
+Am besten startet ihr an diesem Punkt einmal euren PC neu.
 
 # Android Studio installieren
 
@@ -36,9 +49,11 @@ Clone die aktuelleste stabile release Version der Flutter SDK in einen gewünsch
 
 Installiere [**Android Studio**][105] ⬇️.
 
-> Anstatt Android Studio kann auch VS Code verwendet werden. Siehe [**Anleitung**][106].
+> Wenn ihr mögt, könnt ihr auch VS Code benutzen, aber im Praktikum werden wir Android Studio verwenden. Die Vorgehensweise ist jedoch sehr änlich. Siehe [**Anleitung**][106].
 
 **Nach der Installation:** Im **Welcome Fenster** wähle _Configure_ auf der linken Seite, dann _Plugins_ und lade das **Flutter** und das **Dart** Plugin herunter.
+
+![](src/Screenshot%202023-03-02%20at%2019.01.13.png)
 
 ## `flutter doctor` ausführen
 
@@ -48,14 +63,16 @@ Führe in einem Konsolenfenster den folgenden Befehl aus, um zu sehen, ob es irg
 flutter doctor
 ```
 
-> 🔍 Dieser Befehl überprüft deine Environment und gibt einen Bericht über den Zustand der Flutter Installation wieder. Checke die Ausgaben aufmerksam Schritt für Schritt (**Chrome** und **Visual Studio Errors** können **unbeachtet** gelassen werden).
+> 🔍 Dieser Befehl überprüft deine Environment und gibt einen Bericht über den Zustand der Flutter Installation wieder. Checke die Ausgaben aufmerksam Schritt für Schritt. Am Ende solltest du bei allen Punkten Haken haben. Warnings können bleiben (**Chrome** und **Visual Studio Errors** können **unbeachtet** gelassen werden). Meistens hilft es, die error message einfach zu googeln.
 
-* *Bei Fehler* `cmdline-tools component is missing`: Installiere das **Command Line Tool** unter Android Studio (Welcome screen: More Actions > SDK Manager > Reiter: SDK Tools > Android SDK Command-line Tools (latest))
-* *Bei Fehler* `Android license status unknown`: Run `flutter doctor --android-licenses`
+![](src/SCR-20230302-qqfu.png)
+
+* *Beim Fehler* `cmdline-tools component is missing`: Installiere das **Command Line Tool** unter Android Studio (Welcome screen: More Actions > SDK Manager > Reiter: SDK Tools > Android SDK Command-line Tools (latest))
+* *Beim Fehler* `Android license status unknown`: Run `flutter doctor --android-licenses`
 
 # Das BI-Vital Flutter Projekt
 
-Im Welcome Screen von Android Studio auf **Open** drücken und den Ordner: `/bi-vital-flutter-app/bivital_flutterapp` aus dem geklonten Repo als Projekt hinzuzufügen.
+Im Welcome Screen von Android Studio auf **Open** drücken und den Ordner: `/bi-vital-flutter-app/bivital_flutterapp` aus dem geklonten Repo als Projekt hinzuzufügen (nicht den Wurzelordner `bi-vital-flutter-app`, sondern den Unterordner).
 
 > #### ❓ Flutter SDK Pfad angeben
 > >
@@ -71,9 +88,9 @@ Im Welcome Screen von Android Studio auf **Open** drücken und den Ordner: `/bi-
 1. **Entwickleroptionen** und **USB debugging** auf dem Gerät aktivieren.
    - Wenn das **Entwickleroptionen** Menü in den OS Einstellungen nicht zu finden ist, muss es vorher aktiviert werden. Dazu die Buildnummer (unter Telefoninfo, evtl Softwareinformationen) 7 Mal antippen. Siehe [**Dokumentation**][107].
 2. Den [**Google USB Driver**][108] installieren in Android Studio.
-3. Das Handy mit einem USB-Kabel am Computer anschließen. Wenn Sie auf Ihrem Gerät dazu aufgefordert werden, autorisieren Sie den Computer für den Zugriff auf das Gerät.
+3. Das Handy mit einem USB-Kabel am Computer anschließen. Wenn du auf deinem Gerät dazu aufgefordert wirst, autorisiere den Computer für den Zugriff auf das Gerät.
 
-Stellt euch sicher, dass ihr den Projekt Orner in Android Studio öffnen könnt, und etwas ähnliches seht, wie hier:
+Stellt euch sicher, dass ihr den Projekt Ordner in Android Studio öffnen könnt, und etwas ähnliches seht, wie hier:
 
 ![](src/Screenshot%202023-03-02%20at%2017.49.15.png)
 
