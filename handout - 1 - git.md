@@ -15,8 +15,10 @@ Vorteile sind u. a.:
 
 Und noch viele mehr.
 
-> 📖 Eine sehr ausführliche Einführung in die Arbeit mit Git bietet das kostenlose
-> E-book [**"Pro Git" von "Scott Chacon"**](https://git-scm.com/book/en/v2)!
+
+
+> <img align="left" src="src/SCR-20230302-pzrj.jpeg" width="10%"/> Eine sehr ausführliche Einführung in die Arbeit mit Git bietet das kostenlose E-book [**Pro Git**](https://git-scm.com/book/en/v2) von Scott Chacon!
+> <br clear="left"/>
 >
 > Es gibt darüber hinaus viele "Cheat Sheets", zum Beispiel [**dieses hier**](https://education.github.com/git-cheat-sheet-education.pdf).
 
@@ -25,6 +27,8 @@ Und noch viele mehr.
 Für Informationen zur Installation sollte die [**git Webseite**](https://git-scm.com/) zu Rate gezogen werden.
 
 ![](src/SCR-20230302-pkbk-2.png)
+
+![](src/SCR-20230302-popq.png)
 
 > Es gibt natürlich eine Vielzahl an grafischen Tools und Helferlein, die sich
 > gegenseitig mit Features für den Anwender übertrumpfen. Wenn ihr mit Git vertraut seid, könnt ihr gerne auch mit solchen Tools arbeiten.
