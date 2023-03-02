@@ -38,7 +38,7 @@ Bevor es los geht, müsst ihr Git mitteilen, wie ihr heißt. Das ist wichtig, um
 
 ```bash
 git config --global user.name "Euer Name"
-git config --global user.email "eure.name@fh-bielefeld.de"
+git config --global user.email "eure.name@uni-bielefeld.de"
 ```
 
 ## Das Repository klonen unter Windows

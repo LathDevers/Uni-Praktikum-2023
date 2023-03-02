@@ -1,6 +1,6 @@
 # Einrichtung der Flutter SDK
 
-Wenn etwas unklar ist, wendet euch bitte an der offiziellen Dokumentation:
+Wenn etwas unklar ist, wendet euch bitte an die offizielle Dokumentation:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://flutter.dev/docs/get-started/install/windows">
@@ -27,11 +27,11 @@ git clone https://github.com/flutter/flutter.git -b stable
 
 ## 2) Den Pfad aktualisieren
 
-In Systemsteuerung > Benutzerkonten > Benutzerkonten tippe auf Eigene Umgebungsvariablen ändern.
+In **Systemsteuerung** > **Benutzerkonten** > **Benutzerkonten** tippe auf **Eigene Umgebungsvariablen ändern**.
 
 ![](src/SCR-20230302-qkpu.png)
 
-Überprüfe unter **Benutzervariablen**, ob ein Entrag namens **Path** existiert.
+Überprüfe unter **Benutzervariablen**, ob ein Eintrag namens **Path** existiert.
   - Wenn der Eintrag existiert: füge den vollen Pfad zu `flutter\bin` mit dem `;` Trennzeichen nach existierenden Werten hinzu.
   - Wenn der Eintrag nicht existiert: erstelle eine neue Variable namens `Path` mit dem vollen Pfad zu `flutter\bin`.
 
@@ -57,7 +57,7 @@ Installiere [**Android Studio**][105] ⬇️.
 
 ## `flutter doctor` ausführen
 
-Führe in einem Konsolenfenster den folgenden Befehl aus, um zu sehen, ob es irgendwelche Plattformabhängigkeiten es gibt, welche noch zur Fertigstellung der Einrichtung benötigt werden:
+Führe in einem Konsolenfenster den folgenden Befehl aus, um zu sehen, ob es irgendwelche Plattformabhängigkeiten gibt, welche noch zur Fertigstellung der Einrichtung benötigt werden:
 
 ```python
 flutter doctor
