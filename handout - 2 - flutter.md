@@ -83,7 +83,7 @@ Im Welcome Screen von Android Studio auf **Open** drücken und den Ordner: `/bi-
 > > und setze den Pfad zum Flutter SDK Repo aus Schritt 2 (z. B., `C:\Users\<your-user-name>\Documents\flutter`).
 > >
 
-## 8) Android Gerät vorbereiten (nur für Debug Modus nötig)
+## Android Gerät vorbereiten (nur für Debug Modus nötig)
 
 1. **Entwickleroptionen** und **USB debugging** auf dem Gerät aktivieren.
    - Wenn das **Entwickleroptionen** Menü in den OS Einstellungen nicht zu finden ist, muss es vorher aktiviert werden. Dazu die Buildnummer (unter Telefoninfo, evtl Softwareinformationen) 7 Mal antippen. Siehe [**Dokumentation**][107].
