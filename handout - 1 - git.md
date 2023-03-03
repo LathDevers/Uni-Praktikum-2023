@@ -1,10 +1,19 @@
+# Checklist
+
+- [ ] Sich ein wenig mig Git auseinandersetzen. [🔗](#git)
+- [ ] Git herunterladen und installieren. [🔗](#installation)
+- [ ] `user.name` und `user.email` aktualisieren. [🔗](#vor-der-ersten-verwendung)
+- [ ] Das Gitlab Projekt-Repository klonen. [🔗](#das-repository-klonen)
+
+---
+
 # [Git](https://git-scm.com/)
 
 - free und open source
 - ein Versionsverwaltungsprogramm
 - beliebt und weit verbreitet
 
-In seiner Grundfunktion tut Git nichts weiter, als Dateien, die ihr im "gebt",
+In seiner Grundfunktion tut **Git** nichts weiter, als Dateien, die ihr im "gebt",
 zu verwalten, und die Änderungen zwischen verschiedenen Versionen zu registrieren.
 
 Vorteile sind u. a.:
@@ -18,7 +27,20 @@ Und noch viele mehr.
 > <img align="left" src="src/SCR-20230302-pzrj.jpeg" width="10%"/> Eine sehr ausführliche Einführung in die Arbeit mit Git bietet das kostenlose E-book [**Pro Git**](https://git-scm.com/book/en/v2) von Scott Chacon!
 > <br clear="left"/>
 >
-> Es gibt darüber hinaus viele "Cheat Sheets", zum Beispiel [**dieses hier**](https://education.github.com/git-cheat-sheet-education.pdf).
+> Es gibt darüber hinaus auch viele [**Cheat Sheets**](https://education.github.com/git-cheat-sheet-education.pdf).
+
+## Gitlab
+
+Wir verwenden Git im Zusammenhang mit einem Git Server. Der Server ist in unserem Fall der Gitlab Server der Uni Bielefeld.
+Für euch ist es nur wichtig zu wissen, dass euer lokales Projekt immer eine **vollständige** Kopie des Projektes auf der Serverseite ist. Ihr verfügt also immer über alle Daten und Dateien.
+
+**Git kommuniziert nicht automatisch mit dem Server**. Wenn es also neue Änderungen bei euch gibt, oder auf dem Server, dann müsst ihr Git erst darauf hinweisen. (`git pull`, `git push` etc.)
+
+<img
+src="src/20220802_165310.jpg"
+min-width="100"
+width="100%"
+/>
 
 ## Installation
 
@@ -41,7 +63,7 @@ git config --global user.name "Euer Name"
 git config --global user.email "euer.name@uni-bielefeld.de"
 ```
 
-## Das Repository klonen unter Windows
+## Das Repository klonen
 
 Um mit an dem Projekt zu arbeiten, müsst ihr zunächst das repository klonen. 
 Dazu findet ihr auf der [**Startseite des Projekts**]() <!---TODO:--> den blauen Button "Clone" und könnt das repository mit SSH oder HTTPS klonen.
@@ -63,16 +85,3 @@ Anschließend müsst ihr euer Git-Passwort und -Benutzernamen eingeben.
 > git clone https://gitlab.ub.uni-bielefeld.de/kevin.penner/biomechatronik-praktikum-2021.git
 > ```
 <!---TODO:-->
-
-## Gitlab
-
-Wir verwenden Git im Zusammenhang mit einem Git Server. Der Server ist in unserem Fall der Gitlab Server der Uni Bielefeld.
-Für euch ist es nur wichtig zu wissen, dass euer lokales Projekt immer eine **vollständige** Kopie des Projektes auf der Serverseite ist. Ihr verfügt also immer über alle Daten und Dateien.
-
-**Git kommuniziert nicht automatisch mit dem Server**. Wenn es also neue Änderungen bei euch gibt, oder auf dem Server, dann müsst ihr Git erst darauf hinweisen.
-
-<img
-src="src/20220802_165310.jpg"
-min-width="100"
-width="100%"
-/>

@@ -1,3 +1,13 @@
+# Checklist
+
+- [ ] Flutter SDK herunterladen. [🔗](#einrichtung-der-flutter-sdk)
+- [ ] Flutter zur Umgebungsvariable `PATH` hinzufügen [🔗](#den-pfad-aktualisieren)
+- [ ] Android Studio und Plugins installieren [🔗](#android-studio-installieren)
+- [ ] `flutter doctor` Fehlermeldungen beheben [🔗](#flutter-doctor-ausführen)
+- [ ] USB-debugging vorbereiten [🔗](#android-gerät-vorbereiten)
+
+---
+
 # Einrichtung der Flutter SDK
 
 Wenn etwas unklar ist, wendet euch bitte an die offizielle Dokumentation:
@@ -15,7 +25,7 @@ Wenn etwas unklar ist, wendet euch bitte an die offizielle Dokumentation:
 
 In dieser Anleitung wird die Installation **für Windows** beschrieben.
 
-## 1) Flutter SDK herunterladen
+## Flutter SDK herunterladen
 
 Clone die aktuelleste stabile release Version der Flutter SDK in einen gewünschten Installationsordner (z. B. `C:\Users\<your-user-name>\Documents`):
 
@@ -25,7 +35,7 @@ git clone https://github.com/flutter/flutter.git -b stable
 
 > ☢️ **WARNUNG** ☢️ Installiere Flutter nicht in einem Ordner wie `C:\Program Files\`, der erhöhte Rechte erfordert.
 
-## 2) Den Pfad aktualisieren
+## Den Pfad aktualisieren
 
 In **Systemsteuerung** > **Benutzerkonten** > **Benutzerkonten** tippe auf **Eigene Umgebungsvariablen ändern**.
 
@@ -83,7 +93,7 @@ Im Welcome Screen von Android Studio auf **Open** drücken und den Ordner: `/bi-
 > > und setze den Pfad zum Flutter SDK Repo aus Schritt 2 (z. B., `C:\Users\<your-user-name>\Documents\flutter`).
 > >
 
-## Android Gerät vorbereiten (nur für Debug Modus nötig)
+## Android Gerät vorbereiten
 
 1. **Entwickleroptionen** und **USB debugging** auf dem Gerät aktivieren.
    - Wenn das **Entwickleroptionen** Menü in den OS Einstellungen nicht zu finden ist, muss es vorher aktiviert werden. Dazu die Buildnummer (unter Telefoninfo, evtl Softwareinformationen) 7 Mal antippen. Siehe [**Dokumentation**][107].
