@@ -1,6 +1,6 @@
 # Checklist
 
-- [ ] Sich ein wenig mig Git auseinandersetzen. [🔗](#git)
+- [ ] Sich ein wenig mit Git auseinandersetzen. [🔗](#git)
 - [ ] Git herunterladen und installieren. [🔗](#installation)
 - [ ] `user.name` und `user.email` aktualisieren. [🔗](#vor-der-ersten-verwendung)
 - [ ] Das Gitlab Projekt-Repository klonen. [🔗](#das-repository-klonen)

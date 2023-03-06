@@ -1,3 +1,13 @@
+# Checklist
+
+- [X] Flutter SDK herunterladen.
+- [X] Flutter zur Umgebungsvariable `PATH` hinzufügen.
+- [X] Android Studio und Plugins installieren.
+- [X] `flutter doctor` Fehlermeldungen beheben.
+- [X] USB-debugging vorbereiten.
+
+---
+
 Die ausführliche, englischsprachige Dokumentation zur Einrichtung befindet sich auf der offiziellen Webseite:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

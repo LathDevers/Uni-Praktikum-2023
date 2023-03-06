@@ -49,7 +49,7 @@ git config --global user.name "Euer Name"
 git config --global user.email "euer.name@uni-bielefeld.de"
 ```
 
-## Das Repository klonen unter Windows
+## Das Repository klonen
 
 Um mit an dem Projekt zu arbeiten, müsst ihr zunächst das repository klonen. 
 Dazu findet ihr auf der Startseite des Projekts den blauen Button "Clone" und könnt 

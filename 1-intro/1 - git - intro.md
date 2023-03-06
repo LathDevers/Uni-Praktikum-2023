@@ -1,3 +1,12 @@
+# Checklist
+
+- [X] Sich ein wenig mit Git auseinandersetzen.
+- [X] Git herunterladen und installieren.
+- [X] `user.name` und `user.email` aktualisieren.
+- [X] Das Gitlab Projekt-Repository klonen.
+
+---
+
 [**Git**](https://git-scm.com/) ist ein Versionsverwaltungsprogramm, das unter Softwareentwicklern sehr beliebt und weit verbreitet ist.
 In seiner Grundfunktion tut Git nichts weiter, als Dateien, die ihr im "gebt",
 zu verwalten, und die Änderungen zwischen verschiedenen Versionen zu registrieren.
@@ -49,7 +58,7 @@ git config --global user.name "Euer Name"
 git config --global user.email "euer.name@uni-bielefeld.de"
 ```
 
-## Das Repository klonen unter Windows
+## Das Repository klonen
 
 Um mit an dem Projekt zu arbeiten, müsst ihr zunächst das repository klonen. 
 Dazu findet ihr auf der Startseite des Projekts den blauen Button "Clone" und könnt 
