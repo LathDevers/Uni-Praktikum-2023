@@ -112,11 +112,22 @@ Languages & Frameworks
 
 ## Android Gerät vorbereiten
 
+### Physisches Gerät
+
 1. **Entwickleroptionen** und **USB debugging** auf dem Gerät aktivieren.
    - Wenn das **Entwickleroptionen** Menü in den OS Einstellungen nicht zu finden ist, muss es vorher aktiviert werden. Dazu die Buildnummer (unter Telefoninfo, evtl Softwareinformationen) 7 Mal antippen. Siehe [**Dokumentation**][107].
 2. Den [**Google USB Driver**][108] installieren in Android Studio.
 3. Das Handy mit einem USB-Kabel am Computer anschließen. Wenn Sie auf Ihrem Gerät dazu aufgefordert werden, autorisieren Sie den Computer für den Zugriff auf das Gerät.
 4. Führe nun `flutter devices` aus, um zu überprüfen, ob Flutter das angeschlossene Android-Gerät richtig erkannt hat.
+
+### Virtuelles Gerät (Emulator)
+
+1. **Android Studio** > **Tools** > **Device Manager**
+2. **Virtual** tab
+3. **Create device**
+4. Choose hardware
+5. Download current stable system image *(API 33 arm64 v8a - Android 13.0)*
+6. Finish
 
 ---
 
