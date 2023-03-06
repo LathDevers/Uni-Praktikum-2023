@@ -21,6 +21,8 @@ Clone die aktuelleste stabile release Version der Flutter SDK in einen gewünsch
 git clone https://github.com/flutter/flutter.git -b stable
 ```
 
+> ☢️ **WARNUNG** ☢️ Installiere Flutter nicht in einem Pfad, der Sonderzeichen oder Leerzeichen enthält.
+>
 > ☢️ **WARNUNG** ☢️ Installiere Flutter nicht in einem Ordner wie `C:\Program Files\`, der erhöhte Rechte erfordert.
 
 ## 2) Den Pfad aktualisieren
@@ -68,8 +70,13 @@ flutter doctor
 > 🔍 Dieser Befehl überprüft deine Environment und gibt einen Bericht über den Zustand der Flutter Installation wieder. Checke die Ausgaben aufmerksam Schritt für Schritt (**Chrome** und **Visual Studio Errors** können **unbeachtet** gelassen werden).
 
 * If Flutter cannot locate your installation of Android Studio, run `flutter config --android-studio-dir <directory>` to set the directory that Android Studio is installed to.
-* *Bei Fehler* `cmdline-tools component is missing`: Installiere das **Command Line Tool** unter Android Studio (Welcome screen: More Actions > SDK Manager > Reiter: SDK Tools > Android SDK Command-line Tools (latest))
+* *Bei Fehler* `cmdline-tools component is missing`: Installiere das **Command Line Tool** unter Android Studio (Welcome screen: More Actions > SDK Manager > Reiter: SDK Tools > Android SDK Command-line Tools (latest)). [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Quelle**](https://stackoverflow.com/questions/68236007/i-am-getting-error-cmdline-tools-component-is-missing-after-installing-flutter)
 * *Bei Fehler* `Android license status unknown`: Run `flutter doctor --android-licenses`
+* [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Flutter command is not found?**](https://stackoverflow.com/questions/50652071/flutter-command-not-found)
+* `Waiting for another flutter command to release the startup lock` ➡️ [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Solution**](https://stackoverflow.com/questions/51679269/waiting-for-another-flutter-command-to-release-the-startup-lock)
+* `Android Studio (not installed)` ➡️ [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Solution**](https://stackoverflow.com/questions/59647791/android-studio-not-installed-when-run-flutter-doctor-while-android-studio-in)
+* `flutter doctor --android-licenses` gives a java error ➡️ [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Solution**](https://stackoverflow.com/questions/61993738/flutter-doctor-android-licenses-gives-a-java-error)
+* `Android sdkmanager tool not found` ➡️ [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Solution**](https://stackoverflow.com/questions/60475481/flutter-doctor-error-android-sdkmanager-tool-not-found-windows/)
 
 # Das BI-Vital Flutter Projekt
 
