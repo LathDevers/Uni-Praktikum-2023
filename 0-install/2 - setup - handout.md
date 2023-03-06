@@ -77,6 +77,7 @@ flutter doctor
 
 ![](src/SCR-20230302-qqfu.png)
 
+* If Flutter cannot locate your installation of Android Studio, run `flutter config --android-studio-dir <directory>` to set the directory that Android Studio is installed to.
 * *Beim Fehler* `cmdline-tools component is missing`: Installiere das **Command Line Tool** unter Android Studio (Welcome screen: More Actions > SDK Manager > Reiter: SDK Tools > Android SDK Command-line Tools (latest))
 * *Beim Fehler* `Android license status unknown`: Run `flutter doctor --android-licenses`
 
@@ -99,6 +100,9 @@ Im Welcome Screen von Android Studio auf **Open** drücken und den Ordner: `/bi-
    - Wenn das **Entwickleroptionen** Menü in den OS Einstellungen nicht zu finden ist, muss es vorher aktiviert werden. Dazu die Buildnummer (unter Telefoninfo, evtl Softwareinformationen) 7 Mal antippen. Siehe [**Dokumentation**][107].
 2. Den [**Google USB Driver**][108] installieren in Android Studio.
 3. Das Handy mit einem USB-Kabel am Computer anschließen. Wenn du auf deinem Gerät dazu aufgefordert wirst, autorisiere den Computer für den Zugriff auf das Gerät.
+4. Führe nun `flutter devices` aus, um zu überprüfen, ob Flutter das angeschlossene Android-Gerät richtig erkannt hat.
+
+---
 
 Stellt euch sicher, dass ihr den Projekt Ordner in Android Studio öffnen könnt, und etwas ähnliches seht, wie hier:
 

@@ -1,4 +1,4 @@
-# Checklist
+# Checkliste
 
 - [ ] Sich ein wenig mit Git auseinandersetzen. [🔗](#git)
 - [ ] Git herunterladen und installieren. [🔗](#installation)
