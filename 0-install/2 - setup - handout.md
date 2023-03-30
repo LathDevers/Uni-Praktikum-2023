@@ -23,7 +23,7 @@ Wenn etwas unklar ist, wendet euch bitte an die offizielle Dokumentation:
     <img src="https://seeklogo.com/images/T/tux-logo-AA06C623EC-seeklogo.com.png" height="50" />
 </a>
 
-In dieser Anleitung wird die Installation **für Windows** beschrieben.
+In dieser Anleitung wird die Installation **auf Windows** beschrieben.
 
 ## Flutter SDK herunterladen
 
@@ -41,65 +41,79 @@ git clone https://github.com/flutter/flutter.git -b stable
 
 In **Systemsteuerung** > **Benutzerkonten** > **Benutzerkonten** tippe auf **Eigene Umgebungsvariablen ändern**.
 
-![](src/SCR-20230302-qkpu.png)
+![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/SCR-20230302-qkpu.png)
 
 Überprüfe unter **Benutzervariablen**, ob ein Eintrag namens **Path** existiert.
   - Wenn der Eintrag existiert: füge den vollen Pfad zu `flutter\bin` mit dem `;` Trennzeichen nach existierenden Werten hinzu.
   - Wenn der Eintrag nicht existiert: erstelle eine neue Variable namens `Path` mit dem vollen Pfad zu `flutter\bin`.
 
-![](src/SCR-20230302-qmuh.png)
+![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/SCR-20230302-qmuh.png)
 
-![](src/SCR-20230302-qmmv.png)
+![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/SCR-20230302-qmmv.png)
 
 > ❗️ Alle vorhandenen Konsolenfenster müssen geschlossen und wieder geöffnet werden, damit diese Änderungen wirksam werden.
-
-Am besten startet ihr an diesem Punkt einmal euren PC neu.
+>
+> Am besten startet ihr an diesem Punkt einmal euren PC neu.
 
 # Android Studio installieren
 
-![](src/android-studio.png)
+<img
+src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/android-studio.png"
+alt="Android Studio Electric Eel"
+width="60%"
+/>
 
 Installiere [**Android Studio**][105] ⬇️.
 
-> Wenn ihr mögt, könnt ihr auch VS Code benutzen, aber im Praktikum werden wir Android Studio verwenden. Die Vorgehensweise ist jedoch sehr änlich. Siehe [**Anleitung**][106].
+🧑‍🔧 Die standard Installation von Android Studio braucht Adminrechte, sind die nicht vorhanden, kann man alternative die [**Zip Installationsdatei *(No .exe installer)***][105] herunterladen und extrahieren. Im entpackten Ordner, öffne `studio64.exe`, um Android Studio zu starten.
 
-**Nach der Installation:** Im **Welcome Fenster** wähle _Configure_ auf der linken Seite, dann _Plugins_ und lade das **Flutter** und das **Dart** Plugin herunter.
+Im Installation Wizard wähle `Custom`. Unter dem `Android SDK location` versichere, dass der ausgewählte Pfad unter deinem Benutzerordner ist. (`C:\Users\<username>\AppData\Local\Android\Sdk`)
 
-![](src/Screenshot%202023-03-02%20at%2019.01.13.png)
+Später im Wizard kannst du gerne mehr als der vorgeschlagene 2GB RAM wählen.
+
+> Wenn ihr mögt, könnt ihr auch VS Code benutzen, aber im Praktikum werden wir Android Studio verwenden. Die Vorgehensweise ist jedoch sehr ähnlich. Siehe [**Anleitung**][106].
+
+**Nach der Installation:** Im **Welcome Fenster** wähle *Plugins* auf der linken Seite und lade das **Flutter** und das **Dart** Plugin herunter.
+
+![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/Screenshot%202023-03-02%20at%2019.01.13.png)
 
 ## `flutter doctor` ausführen
 
 Führe in einem Konsolenfenster den folgenden Befehl aus, um zu sehen, ob es irgendwelche Plattformabhängigkeiten gibt, welche noch zur Fertigstellung der Einrichtung benötigt werden:
 
-```python
+```bash
 flutter doctor
 ```
 
 > 🔍 Dieser Befehl überprüft deine Environment und gibt einen Bericht über den Zustand der Flutter Installation wieder. Checke die Ausgaben aufmerksam Schritt für Schritt. Am Ende solltest du bei allen Punkten Haken haben. Warnings können bleiben (**Chrome** und **Visual Studio Errors** können **unbeachtet** gelassen werden). Meistens hilft es, die error message einfach zu googeln.
 
-![](src/SCR-20230302-qqfu.png)
+![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/SCR-20230302-qqfu.png)
 
-* If Flutter cannot locate your installation of Android Studio, run `flutter config --android-studio-dir <directory>` to set the directory that Android Studio is installed to.
-* *Bei Fehler* `cmdline-tools component is missing`: Installiere das **Command Line Tool** unter Android Studio (Welcome screen: More Actions > SDK Manager > Reiter: SDK Tools > Android SDK Command-line Tools (latest)). [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Quelle**](https://stackoverflow.com/questions/68236007/i-am-getting-error-cmdline-tools-component-is-missing-after-installing-flutter)
-* *Bei Fehler* `Android license status unknown`: Run `flutter doctor --android-licenses`
-* [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Flutter command is not found?**](https://stackoverflow.com/questions/50652071/flutter-command-not-found)
-* `Waiting for another flutter command to release the startup lock` ➡️ [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Solution**](https://stackoverflow.com/questions/51679269/waiting-for-another-flutter-command-to-release-the-startup-lock)
-* `Android Studio (not installed)` ➡️ [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Solution**](https://stackoverflow.com/questions/59647791/android-studio-not-installed-when-run-flutter-doctor-while-android-studio-in)
-* `flutter doctor --android-licenses` gives a java error ➡️ [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Solution**](https://stackoverflow.com/questions/61993738/flutter-doctor-android-licenses-gives-a-java-error)
-* `Android sdkmanager tool not found` ➡️ [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Solution**](https://stackoverflow.com/questions/60475481/flutter-doctor-error-android-sdkmanager-tool-not-found-windows/)
+| Errormessage | Lösung |
+| - | - |
+| Flutter cannot locate my installation of Android Studio | Run `flutter config --android-studio-dir <directory>` to set the directory that Android Studio is installed to. |
+| `cmdline-tools component is missing` | Installiere das **Command Line Tool** unter Android Studio (Welcome screen: More Actions > SDK Manager > Reiter: SDK Tools > Android SDK Command-line Tools (latest)).[**¹**](https://stackoverflow.com/questions/68236007/i-am-getting-error-cmdline-tools-component-is-missing-after-installing-flutter) |
+| `Android license status unknown` | `flutter doctor --android-licenses` |
+| `bash: flutter: command not found` | [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Lösung**](https://stackoverflow.com/questions/50652071/flutter-command-not-found) |
+| `Waiting for another flutter command to release the startup lock` | [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Lösung**](https://stackoverflow.com/questions/51679269/waiting-for-another-flutter-command-to-release-the-startup-lock) |
+| `Android Studio (not installed)` | [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Lösung**](https://stackoverflow.com/questions/59647791/android-studio-not-installed-when-run-flutter-doctor-while-android-studio-in) |
+| `flutter doctor --android-licenses` gives a java error | [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Lösung**](https://stackoverflow.com/questions/61993738/flutter-doctor-android-licenses-gives-a-java-error) |
+| `Android sdkmanager tool not found` | [<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Lösung**](https://stackoverflow.com/questions/60475481/flutter-doctor-error-android-sdkmanager-tool-not-found-windows/) |
+| `Windows Version (Unable to confirm if installed Windows version is 10 or greater)` | Dies ist ein Problem der Betriebssystemsprache. Auf englischen Windows-Versionen trat das Problem nicht auf.[**²**](https://stackoverflow.com/questions/74399911/flutter-doctor-windows-version-unable-to-confirm-if-installed-windows-version/75359987#75359987) <br> Dieses Problem wurde im Flutter **master channel** behoben. Wir müssen jedoch das **stable channel** benutzen (`master channel depends on flutter_localizations which depends on intl 0.17.0`). **Diese Errormessage kann unbeachtet werden.**[**³**](https://github.com/flutter/flutter/issues/117163#issuecomment-1442517678) |
 
 # Das BI-Vital Flutter Projekt
 
-Im Welcome Screen von Android Studio auf **Open** drücken und den Ordner: `/bi-vital-flutter-app/bivital_flutterapp` aus dem geklonten Repo als Projekt hinzuzufügen (nicht den Wurzelordner `bi-vital-flutter-app`, sondern den Unterordner).
+Im Welcome Screen von Android Studio auf **Open** drücken und den Ordner: `/control-app/bivital_flutterapp` aus dem geklonten Repo als Projekt hinzuzufügen (nicht den Wurzelordner `control-app`, sondern den Unterordner).
 
 > #### ❓ Flutter SDK Pfad angeben
-> >
-> > Manchmal kann es passieren, dass trotz der Eingabe des Flutter SDK Pfades in Windows, der Pfad nicht in Android Studio übernommen wird. Um dies zu checken bzw. zu beheben, gehe zu:
-> >
-> > File > Settings > Language & Frameworks > Flutter > SDK
-> >
-> > und setze den Pfad zum Flutter SDK Repo aus Schritt 2 (z. B., `C:\Users\<your-user-name>\Documents\flutter`).
-> >
+>
+> Manchmal kann es passieren, dass trotz der Eingabe des Flutter SDK Pfades in Windows, der Pfad nicht in Android Studio übernommen wird. Um dies zu checken bzw. zu beheben, gehe zu:
+>
+> File > Settings > Language & Frameworks > Flutter > SDK
+>
+> und setze den Pfad zum Flutter SDK Repo aus Schritt 2 (z. B., `C:\path\to\flutter`).
+
+In den Einstellungen öffne **Languages & Frameworks** > **Dart**, aktiviere **Dart support für das Projekt** und tippe den Pfad zu Dart ein. (`flutter doctor` installiert Dart automatisch unter `C:\path\to\flutter\bin\cache\dart-sdk`)
 
 ## Android Gerät vorbereiten
 
@@ -113,7 +127,7 @@ Im Welcome Screen von Android Studio auf **Open** drücken und den Ordner: `/bi-
 
 Stellt euch sicher, dass ihr den Projekt Ordner in Android Studio öffnen könnt, und etwas ähnliches seht, wie hier:
 
-![](src/Screenshot%202023-03-02%20at%2017.49.15.png)
+![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/Screenshot%202023-03-02%20at%2017.49.15.png)
 
 ---
 

@@ -1,9 +1,14 @@
 [**Flutter**][016] ist ein Open-Source Cross-Platform Software Development Kit (SDK), das die Programmiersprache [**Dart**][001] verwendet. 
 
-> <details>
-> <summary>Dart</summary>
-> Dart is a "pure" object-oriented language in that all objects are instances of classes. But Dart does not require all code to be defined inside a class - you can define top-level variables, constants, and functions like you can in a procedural or functional language.<br><i>There's an interesting package, called <b><a href="https://pub.dev/packages/fpdart">fpdart</a></b>, that enables functional programming properties in Dart.</i><br><br>Dart is a garbage-collected language with C-like syntax.
-> </details>
+### Dart
+
+Dart ist eine rein objektorientierte Sprache, da alle Objekte Instanzen von Klassen sind. Aber Dart erfordert nicht, dass der gesamte Code innerhalb einer Klasse definiert wird - es können Variablen, Konstanten und Funktionen auf oberster Ebene definieren, ähnlich wie in einer prozeduralen oder funktionalen Sprache.
+
+*Es gibt ein interessantes Paket namens [**fpdart**](https://pub.dev/packages/fpdart), das funktionale Programmiereigenschaften in Dart ermöglicht.*
+
+Dart ist eine Garbage-Collected-Sprache mit einer C-ähnlichen Syntax.
+
+[<img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Dart_logo.png" width="20" /> **Einführung in Dart**](https://dart.dev/language)
 
 Da sowohl Flutter als auch Dart von Google betreut und gesponsert wird, sind beide weltweit benutzt und sehr gründlich dokumentiert. Der Basis Code ist ohne größere Anpassungen auf **Android**, **iOS**, **Web**, **Windows**, **macOS** und **Linux** mit nativ-naher Performanz lauffähig, weil Dart den Code zur nativen Maschinencode (Kotlin, Swift usw.) auf Mobile und Desktop, sowie zu JavaScript auf dem Web kompiliert.
 
@@ -13,9 +18,9 @@ Flutter kann Cross-Platform funktionieren, weil es ein leeres Canvas vom jeweili
 
 |<b>Widget Tree</b>|<b>Row widget</b>|<b>Column widget</b>|
 | :---: | :---: | :---: |
-| <img src="https://github.com/LathDevers/flutter-training/raw/master/src/sample-flutter-layout.png" alt="Diagram of the widget tree" width="500" /> | <img src="https://github.com/LathDevers/flutter-training/raw/master/src/row-diagram.png" alt="Aligning widget - Row" /> | <img src="https://github.com/LathDevers/flutter-training/raw/master/src/column-diagram.png" alt="Aligning widget - Column" /> |
+| <img src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/flutter-training/raw/master/src/sample-flutter-layout.png" alt="Diagram of the widget tree" width="500" /> | <img src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/flutter-training/raw/master/src/row-diagram.png" alt="Aligning widget - Row" /> | <img src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/flutter-training/raw/master/src/column-diagram.png" alt="Aligning widget - Column" /> |
 
-[*Source*](https://docs.flutter.dev/development/ui/layout)
+[<img src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" width="13" /> *Source*](https://docs.flutter.dev/development/ui/layout)
 
 Die App kann in der Entwicklungsphase schnell mit [**Stateful Hot Reload**][003] aktualisiert werden, so dass der aktuelle App Zustand und die User Daten bewahrt werden. Wenn die Änderungen den Widget-tree oder den Appzustand zu sehr beeinflussen, kann man statt Hot Reload das **Hot Restart** benutzen, das zwar ein bisschen länger dauert, weil es die Änderungen einlädt, die App neustartet und den Zustand resettet, es ist doch schneller, als ein kompletter Neustart.
 
@@ -30,7 +35,7 @@ Die App kann in der Entwicklungsphase schnell mit [**Stateful Hot Reload**][003]
 - für die ersten Schritte im Flutter: [**Intro to Flutter**][108]
 - [**Using packages**][109]; Packages durchstöbern geht auf [**pub.dev**](pub.dev) oder auch [**hier**](https://fluttergems.dev/ "Flutter Gems - A Curated List of Dart & Flutter packages").
 - Eine ausführliche Beschreibung für Flutter findest du auf der GitHub Seite von Tomic Riedel, [**hier**][015].
-- [**Flutter Cookbook**](https://docs.flutter.dev/cookbook)
+- [<img src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" width="13" /> **Flutter Cookbook**](https://docs.flutter.dev/cookbook)
 - Schaue dich auch Andrea Bizzottos [**"Flutter tips & tricks" GitHub Repo**][017] an.
 - [**Kindacode**](www.kindacode.com)
 
@@ -42,7 +47,7 @@ Letzendlich ist es zu erwähnen, dass hinter Flutter eine immens große [**Commu
 
 <a href="https://docs.flutter.dev/dash">
   <img
-    src="https://github.com/LathDevers/flutter-training/raw/master/src/Dashatars.png"
+    src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/flutter-training/raw/master/src/Dashatars.png"
     alt="Flutter's Mascot: Dash"
   />
 </a>
@@ -105,17 +110,27 @@ Dafür ist das letzte Element in der Liste in der `lib\src\moduleslist\src\modul
  - *description*: eine kurze Beschreibung. Der Name und die Beschreibung werden auf der Galeriekarte angezeigt.
  - *myClass*: Hier ist der neue Klassenname anzugeben. So weiß die App, welche Klasse zu öffnen, wenn diese Karte gedrückt wird.
 
-## Flutter --> Flutter intro
+## Hot reload
 
-## Hot reload, Hot restart
+- hilft schnell und einfach zu experimentieren, Benutzeroberflächen zu erstellen, Funktionen hinzuzufügen und Fehler zu beheben
+- injiziert aktualisierte Quellcode-Dateien in die laufende Dart-VM
+- Nachdem die VM die Klassen mit den neuen Versionen der Felder und Funktionen aktualisiert hat, baut das Flutter-Framework den Widget-Tree automatisch neu auf.
+
+[<img src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" width="13" /> **Doku**](https://docs.flutter.dev/development/tools/hot-reload)
+
+Was ist der Unterschied zwischen Hot Reload, Hot Restart und Full Restart?
+
+- **Hot reload** lädt Code-Änderungen in die VM und baut den Widget-Tree neu auf, wobei der Zustand der Anwendung erhalten bleibt; es wird weder `main()` noch `initState()` erneut ausgeführt.
+- **Hot restart** lädt Codeänderungen in die VM und startet die Flutter-App neu, wobei der App-Status verloren geht.
+- **Full restart** startet die iOS-, Android- oder Web-App neu. Dies dauert länger, da auch der Java / Kotlin / ObjC / Swift-Code neu kompiliert wird.
 
 # Hilfsreiche Links
 
-[**Dart cheatsheet**](https://dart.dev/codelabs/dart-cheatsheet "Dart cheatsheet")\
-[**Intro to Flutter**](https://developers.google.com/learn/pathways/intro-to-flutter?hl=en "Intro to Flutter")\
+[<img src="https://raw.githubusercontent.com/wappalyzer/wappalyzer/79af19df7727225962add5467e247f044e4c2c94/src/drivers/webextension/images/icons/Dart.svg" width="16" /> **Dart cheatsheet**](https://dart.dev/codelabs/dart-cheatsheet "Dart cheatsheet")\
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1920px-Google_%22G%22_Logo.svg.png" width="15" /> **Intro to Flutter**](https://developers.google.com/learn/pathways/intro-to-flutter?hl=en "Intro to Flutter")\
 Offizielle, regelmäßig aktualisierte [**Google.dev packages**](https://pub.dev/publishers/google.dev/packages "Packages of publisher google.dev"). Wenn möglich, benutze diese Packages\
-[**Flutter YouTube page**](https://www.youtube.com/c/flutterdev "Flutter YouTube page")\
-[**Flutter codelabs page**](https://flutter.dev/docs/codelabs "Flutter codelabs page")
+[<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" width="20" /> **Flutter YouTube page**](https://www.youtube.com/c/flutterdev "Flutter YouTube page")\
+[<img src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" width="13" /> **Flutter codelabs page**](https://flutter.dev/docs/codelabs "Flutter codelabs page")
 
 ---
 

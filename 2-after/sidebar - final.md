@@ -26,7 +26,7 @@
 ### [**Weiteres**](miscellaneous)
 
 - Aufbau des Projektes
-- Gallerie Bild
+- Galeriebild
 - Spracheneinstellungen
 - Neues Package hinzufügen
 

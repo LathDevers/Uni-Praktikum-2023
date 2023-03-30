@@ -24,10 +24,16 @@ Vorteile sind u. a.:
 
 Und noch viele mehr.
 
-> <img align="left" src="src/SCR-20230302-pzrj.jpeg" width="10%"/> Eine sehr ausführliche Einführung in die Arbeit mit Git bietet das kostenlose E-book [**Pro Git**](https://git-scm.com/book/en/v2) von Scott Chacon!
+> <img align="left" src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/SCR-20230302-pzrj.jpeg" width="10%"/> Eine sehr ausführliche Einführung in die Arbeit mit Git bietet das kostenlose E-book [**Pro Git**](https://git-scm.com/book/en/v2) von Scott Chacon!
 > <br clear="left"/>
 >
 > Es gibt darüber hinaus auch viele [**Cheat Sheets**](https://education.github.com/git-cheat-sheet-education.pdf).
+
+<img
+src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/20220802_165310.jpg"
+min-width="100"
+width="50%"
+/>
 
 ## Gitlab
 
@@ -36,19 +42,13 @@ Für euch ist es nur wichtig zu wissen, dass euer lokales Projekt immer eine **v
 
 **Git kommuniziert nicht automatisch mit dem Server**. Wenn es also neue Änderungen bei euch gibt, oder auf dem Server, dann müsst ihr Git erst darauf hinweisen. (`git pull`, `git push` etc.)
 
-<img
-src="src/20220802_165310.jpg"
-min-width="100"
-width="100%"
-/>
-
 ## Installation
 
 Ladet die neueste Version von der [**git Webseite**](https://git-scm.com/) runter und installiert Git.
 
-![](src/SCR-20230302-pkbk-2.png)
+![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/SCR-20230302-pkbk-2.png)
 
-![](src/SCR-20230302-popq.png)
+![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/SCR-20230302-popq.png)
 
 > Es gibt natürlich eine Vielzahl an grafischen Tools und Helferlein, die sich gegenseitig mit Features für den Anwender übertrumpfen. Wenn ihr mit Git vertraut seid, könnt ihr gerne auch mit solchen Tools arbeiten.
 >
@@ -66,25 +66,24 @@ git config --global user.email "euer.name@uni-bielefeld.de"
 ## Das Repository klonen
 
 Um mit an dem Projekt zu arbeiten, müsst ihr zunächst das repository klonen. 
-Dazu findet ihr auf der [**Startseite des Projekts**]() <!---TODO:--> den blauen Button "Clone" und könnt das repository mit SSH oder HTTPS klonen.
+Dazu findet ihr auf der [**Startseite des Projekts**](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app) den blauen Button "Clone" und könnt das repository mit SSH oder HTTPS klonen.
 
 > Falls ihr SSH nicht kennt, könnt ihr mit dem folgenden Befehl das Projekt mit HTTPS klonen.
 >
 > ```bash
-> git clone https://gitlab.ub.uni-bielefeld.de/kevin.penner/biomechatronik-praktikum-2021.git
+> git clone https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app.git
 > ```
-<!---TODO:-->
 
 Anschließend müsst ihr euer Git-Passwort und -Benutzernamen eingeben.
 
 > ❓ Falls ihr das Passwort oder den Benutzernamen zum Klonen falsch eingegeben habt, müssen diese manuell auf dem Rechner geändert werden, da git Bash euch nicht erneut danach fragt.
 >
-> Dazu geht ihr unter Systemsteuerung\Benutzerkonten\Anmeldeinformationsverwaltung auf "Windows-Anmeldeinformationen" und seht dann unter "generische Anmeldeinformationen" eine Zeile mit git. Dort drückt ihr auf den Pfeil rechts in der Zeile und dann auf "Bearbeiten." So könnt ihr das richtige Passwort und den Benutzernamen eingeben. Daraufhin könnt ihr das repository dann klonen mit:
+> Dazu geht ihr unter **Systemsteuerung** > **Benutzerkonten** > **Anmeldeinformationsverwaltung** auf **Windows-Anmeldeinformationen** und seht dann unter **generische Anmeldeinformationen** eine Zeile mit git. Dort drückt ihr auf den Pfeil rechts in der Zeile und dann auf **Bearbeiten***". So könnt ihr das richtige Passwort und den Benutzernamen eingeben. 
+Daraufhin könnt ihr das repository dann klonen mit:
 >
 > ```bash
-> git clone https://gitlab.ub.uni-bielefeld.de/kevin.penner/biomechatronik-praktikum-2021.git
+> git clone https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app.git
 > ```
-<!---TODO:-->
 
 ---
 

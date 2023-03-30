@@ -4,6 +4,8 @@ In Flutter sind Backend und Frontend sehr eng ineinander integriert. Hier werden
 
 Ein Guide zu [**lists, maps, sets und stacks**][218]
 
+[<img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Dart_logo.png" width="20" /> **Einführung in Dart**](https://dart.dev/language)
+
 # Klassen und mehr
 
 Meistens wird  eine Klasse in Flutter als eine Erweiterung (`extends`) der Klasse `StatelessWidget` oder `StatefulWidget` definiert und die verschiedenen Backendfunktionen schreibt man direkt in einem der Properties des Widgets (`onPressed`, `onTap` usw.). Natürlich kann man allerdings ohnehin Klassen definieren, die verschiedene Funktionen beinhalten und die dann in anderen Klassen instanziert werden können.
@@ -32,7 +34,7 @@ User user1 = User('Jonas', 01234, nationality: 'German');
 User user2 = User('Vivienne', null, age: 34, nationality: 'French');
 User user3 = User('Robert', 98765, nationality: 'English', age: 12, height: null);
 ```
-Wrap the optional parameter with `[ ]` curly braces.
+Wrap the optional parameter with `[ ]` brackets.
 ```dart
 class User {
   User(this.name, [this.age = 24, this.height]);
@@ -77,28 +79,65 @@ class CupertinoSliverNavigationBar extends StatefulWidget { ...
 
 # [**Null safety**](https://dart.dev/null-safety/understanding-null-safety)
 
+`null` itself is not the problem, experience shows that developers tend to introduce null-errors very often. Null-errors cause crashes.
+
 [<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" width="20" /> **Null safety in Dart**](https://youtu.be/iYhOU9AuaFs)
 
-Types in Dart are *non-nullable* by default. This means, that by default you are bound to give value to a variable when defining it, it cannot contain `null` unless you say it can.
+Types in Dart are *non-nullable* by default. This means, that by default you are bound to give value to a variable when defining it, it must never be assigned `null` unless you say it can.
 
 ```dart
 String s = "hello";
 ```
 
-If for some reason you absolutely don't want to define a new variable with a value, but you can assure, that the variable will have a value when it's first read, then there's a workaround to define the variable with the [**late**][214] modifier:
+Let's take a look at a more complicated situation:
 
 ```dart
-late String s;
-s = "hello"; // variable gets value before reading it
-print(s);
+class User {
+  User({required this.id, required this.name});
+
+  int id;
+  String name;
+}
+
+User user1;
+
+print(user1.name);
+```
+
+In this case, user1 is not given a value, so its value would be null (without null-safety). When accessing `name`, our application will crash.
+
+To avoid this, the *code reviewer* will underline `user1` and will notify you, that you must give it a value.
+
+If for some reason you absolutely don't want to define a new variable with a value, but you can assure, that the variable will have a value when it's first read, then there's a workaround to define the variable with the [`late`][214] modifier:
+
+```dart
+late User user1;
+
+user1 = User( // variable gets value before reading it
+  id: 0123,
+  name: 'Moritz',
+);
+
+print(user1.name); // Moritz
 ```
 
 Or you could define the variable nullable by using the `?` null-aware operator.
 
 ```dart
-String? s; // this means, that s is nullable
+User? user1; // this means, that user1 is nullable
+
 // so it can contain null
-s = null;
+print(user1); // null
+user1 = null;
+print(user1); // null
+
+// but before accessing its value, it has to get a value other than null
+user1 = User(
+  id: 0123,
+  name: 'Moritz',
+);
+
+print(user1!.name); // Moritz
 ```
 
 It is not `null` that is bad, it is having `null` go where you don’t expect it that causes problems.\
@@ -107,13 +146,13 @@ You only need to manage this situation wisely: by either using the `!` operator,
 ```dart
 String? s;
 s = "hello"; // variable gets value before reading it
-print(s!);
+print(s!); // ! means: trust me, s has a value other than null
 ```
 
 Or implement different actions if the variable's value is `null` or not.
 
 ```dart
-print(s ?? "hello"); // print s, but if s is null --> print "hello"
+print(s ?? "hello"); // print s, but if s is null, then print "hello"
 
 if (s != null) {
   action_if_s_is_not_null();

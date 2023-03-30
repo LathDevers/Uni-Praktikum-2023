@@ -26,9 +26,6 @@
 ### [**Weiteres**](miscellaneous)
 
 - Aufbau des Projektes
-- Gallerie Bild
-- Spracheneinstellungen
-- Neues Package hinzufügen
 
 ### [**Backend**](backend)
 
