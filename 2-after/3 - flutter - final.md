@@ -32,12 +32,17 @@ Die App kann in der Entwicklungsphase schnell mit [**Stateful Hot Reload**][003]
  - [**Unterstützung für Foldable Geräte**][006].
 
 #### Ein paar weitere hilfsreiche Links:
-- für die ersten Schritte im Flutter: [**Intro to Flutter**][108]
-- [**Using packages**][109]; Packages durchstöbern geht auf [**pub.dev**](pub.dev) oder auch [**hier**](https://fluttergems.dev/ "Flutter Gems - A Curated List of Dart & Flutter packages").
-- Eine ausführliche Beschreibung für Flutter findest du auf der GitHub Seite von Tomic Riedel, [**hier**][015].
-- [<img src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" width="13" /> **Flutter Cookbook**](https://docs.flutter.dev/cookbook)
-- Schaue dich auch Andrea Bizzottos [**"Flutter tips & tricks" GitHub Repo**][017] an.
-- [**Kindacode**](www.kindacode.com)
+
+- Die ersten Schritte im Flutter: [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1920px-Google_%22G%22_Logo.svg.png" width="15" /> **Intro to Flutter**](https://developers.google.com/learn/pathways/intro-to-flutter?hl=en "Intro to Flutter")
+- Eine ausführliche Beschreibung von Flutter findest du auf der [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" width="15"/> **GitHub Seite**][015] von Tomic Riedel.
+- Rezepte, die zeigen, wie man häufig auftretende Probleme löst, findest du im [<img src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" width="13" /> **Flutter Cookbook**](https://docs.flutter.dev/cookbook).
+- Schaue dich auch Andrea Bizzottos [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" width="15"/> **"Flutter tips & tricks" GitHub Repo**][017] an.
+- [**Kindacode**](https://www.kindacode.com) bietet kostenlose, qualitativ hochwertige Entwicklungs-Tutorials für viele Programmiersprachen und IDEs.
+- Das [<img src="https://raw.githubusercontent.com/wappalyzer/wappalyzer/79af19df7727225962add5467e247f044e4c2c94/src/drivers/webextension/images/icons/Dart.svg" width="16" /> **Dart cheatsheet**](https://dart.dev/guides/language/cheatsheet "Dart cheatsheet") fasst Syntaxen für häufig verwendeten Features zusammen.
+- [**Using packages**][109]; Packages durchstöbern geht auf [**pub.dev**](https://pub.dev) oder auch auf [**Flutter Gems**](https://fluttergems.dev/ "Flutter Gems - A Curated List of Dart & Flutter packages").
+- Offizielle, regelmäßig aktualisierte [**Google.dev packages**](https://pub.dev/publishers/google.dev/packages "Packages of publisher google.dev"). Wenn möglich, benutze diese Packages.
+- Für mich war es eine große Hilfe, Videos auf dem [<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" width="20" /> **Youtube-Kanal von Flutter**](https://www.youtube.com/c/flutterdev "Flutter YouTube channel") anzuschauen. Vor allem die Playlist [**Package of the Week**](https://www.youtube.com/watch?v=JSqUZFkRLr8&list=PLjxrf2q8roU1quF6ny8oFHJ2gBdrYN_AK) war manchmal eine große Inspiration. Für Anfänger könnte die Playlist [**Begin learning Flutter**](https://www.youtube.com/watch?v=4AoFA19gbLo&list=PLjxrf2q8roU3wk7CDw4RfV3mEwOJbjx1k) ein guter Start sein.
+- [<img src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" width="13" /> **Flutter codelabs page**](https://flutter.dev/docs/codelabs "Flutter codelabs page")
 
 Hier ist eine [**Liste**][018] von Unternehmen, die Flutter verwenden.
 
@@ -181,14 +186,6 @@ Was ist der Unterschied zwischen Hot Reload, Hot Restart und Full Restart?
 - **Hot reload** lädt Code-Änderungen in die VM und baut den Widget-Tree neu auf, wobei der Zustand der Anwendung erhalten bleibt; es wird weder `main()` noch `initState()` erneut ausgeführt.
 - **Hot restart** lädt Codeänderungen in die VM und startet die Flutter-App neu, wobei der App-Status verloren geht.
 - **Full restart** startet die iOS-, Android- oder Web-App neu. Dies dauert länger, da auch der Java / Kotlin / ObjC / Swift-Code neu kompiliert wird.
-
-# Hilfsreiche Links
-
-[<img src="https://raw.githubusercontent.com/wappalyzer/wappalyzer/79af19df7727225962add5467e247f044e4c2c94/src/drivers/webextension/images/icons/Dart.svg" width="16" /> **Dart cheatsheet**](https://dart.dev/codelabs/dart-cheatsheet "Dart cheatsheet")\
-[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1920px-Google_%22G%22_Logo.svg.png" width="15" /> **Intro to Flutter**](https://developers.google.com/learn/pathways/intro-to-flutter?hl=en "Intro to Flutter")\
-Offizielle, regelmäßig aktualisierte [**Google.dev packages**](https://pub.dev/publishers/google.dev/packages "Packages of publisher google.dev"). Wenn möglich, benutze diese Packages\
-[<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" width="20" /> **Flutter YouTube page**](https://www.youtube.com/c/flutterdev "Flutter YouTube page")\
-[<img src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" width="13" /> **Flutter codelabs page**](https://flutter.dev/docs/codelabs "Flutter codelabs page")
 
 ---
 

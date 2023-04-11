@@ -59,6 +59,8 @@ git config --global user.email "euer.name@uni-bielefeld.de"
 
 # Managing SSH keys for Github and Gitlab
 
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" width="15"/> **Source**](https://gist.github.com/marcoandre1/4b0fbca83104e08d3e729a25a0cba4eb)
+
 I recently had to manage two ssh keys (one for Github and one for Gitlab).
 
 The first question you can ask yourself is [**can you have the same ssh key for both Github and Gitlab**](https://stackoverflow.com/questions/56285972/can-you-and-is-it-advisable-to-use-the-same-ssh-key-for-github-and-gitlab-gitbuc)? The answer is *yes* [**but it is not advisable**](https://stackoverflow.com/a/56285988).
