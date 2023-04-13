@@ -1,24 +1,27 @@
 In Flutter sind Backend und Frontend sehr eng ineinander integriert. Hier werden die beiden Layers nicht voneinander separiert entwickelt (z. B. Android [**XML Dateien**][316]).
 
-# Datentypen und Datenstrukturen
-
-Ein Guide zu [**lists, maps, sets und stacks**][218]
-
 [<img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Dart_logo.png" width="20" /> **Einführung in Dart**](https://dart.dev/language)
 
-# Klassen und mehr
+# [**Datentypen**](https://dart.dev/language/built-in-types) und Datenstrukturen
+
+Ein Guide zu [**lists, maps, sets und stacks**][218].
+
+Dart code is [**type-safe**](https://dart.dev/language/type-system).
+
+# [**Klassen**](https://dart.dev/language/classes) und mehr
 
 Meistens wird  eine Klasse in Flutter als eine Erweiterung (`extends`) der Klasse `StatelessWidget` oder `StatefulWidget` definiert und die verschiedenen Backendfunktionen schreibt man direkt in einem der Properties des Widgets (`onPressed`, `onTap` usw.). Natürlich kann man allerdings ohnehin Klassen definieren, die verschiedene Funktionen beinhalten und die dann in anderen Klassen instanziert werden können.
-
-[**Language Tour**][206]
 
 Class: [**Classes Tutorial**][207]\
 Mixin: [**What are mixins**][203], [**Mixins in Dart**][204]\
 Hooks: [**flutter_hooks**][205]
 
-# Named and positioned, optional and required parameters
-[**Stackoverflow**][208] \
-Wrap the named parameter with `{ }` curly braces.
+[<img src="https://cdn-icons-png.flaticon.com/512/5968/5968885.png" height="20" /> **Exploring Dart Constructors**](https://medium.flutterdevs.com/exploring-dart-constructors-345398a0e4c5)
+
+# Benannte und positionierte, optionale und erforderliche Parameter
+
+Umschließe die benannten Parameter mit geschweiften Klammern `{ }`.
+
 ```dart
 class User {
   User(this.name, this._id, {this.age = 24, this.height, required this.nationality});
@@ -34,7 +37,9 @@ User user1 = User('Jonas', 01234, nationality: 'German');
 User user2 = User('Vivienne', null, age: 34, nationality: 'French');
 User user3 = User('Robert', 98765, nationality: 'English', age: 12, height: null);
 ```
-Wrap the optional parameter with `[ ]` brackets.
+
+Umschließe die optionalen Parameter mit eckigen Klammern `[ ]`.
+
 ```dart
 class User {
   User(this.name, [this.age = 24, this.height]);
@@ -51,12 +56,19 @@ List<User> users = [
 ];
 ```
 
-# Code documentation and commenting
-[**Commenting rules**][209] \
-Comment: `//` or `/* ... */` \
-To write documentation classes, methods, or variables: `///` before the class-, method- or variable declaration
+[<img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" width="20" /> **Quelle**][208]
+
+# Code-Dokumentation und Möglichkeiten zum Kommentieren/Auskommentieren
+
+[**Effective Dart: Documentation**][209]
+
+Kommentare starten mit `//`. Alles nach dem `//` wird von Dart ignoriert.\
+Alternativ kann man auch ganze Codeabschnitte auskommentieren, indem man sie mit `/* ... */` einschließen.
+
+Zur Dokumentation von Klassen, Methoden oder Variablen: `///` vor der Klassen-, Methoden- oder Variablendeklaration.
 
 Beispiel:
+
 ```dart
 /// Title text transfer fade.
 const Duration _kNavBarTitleFadeDuration = Duration(milliseconds: 150);
@@ -79,17 +91,17 @@ class CupertinoSliverNavigationBar extends StatefulWidget { ...
 
 # [**Null safety**](https://dart.dev/null-safety/understanding-null-safety)
 
-`null` itself is not the problem, experience shows that developers tend to introduce null-errors very often. Null-errors cause crashes.
+`Null` selbst ist nicht das Problem, die Erfahrung zeigt, dass Entwickler dazu neigen, sehr oft Null-Fehler einzuführen. Null-Fehler verursachen Abstürze.
 
 [<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" width="20" /> **Null safety in Dart**](https://youtu.be/iYhOU9AuaFs)
 
-Types in Dart are *non-nullable* by default. This means, that by default you are bound to give value to a variable when defining it, it must never be assigned `null` unless you say it can.
+Datentypen in Dart sind standardmäßig *nicht-nullbar (non-nullable)*. Das bedeutet, dass man standardmäßig verpflichtet ist, einer Variablen beim Definieren einen Wert zuzuweisen, sie darf niemals `null` zugewiesen werden, es sei denn, man erlaubt es.
 
 ```dart
 String s = "hello";
 ```
 
-Let's take a look at a more complicated situation:
+Schauen wir uns eine kompliziertere Situation an:
 
 ```dart
 class User {
@@ -104,11 +116,11 @@ User user1;
 print(user1.name);
 ```
 
-In this case, user1 is not given a value, so its value would be null (without null-safety). When accessing `name`, our application will crash.
+In diesem Fall wird `user1` kein Wert zugewiesen, so dass sein Wert `null` wäre (ohne null-safety). Beim Zugriff auf `name` wird die App abstürzen.
 
-To avoid this, the *code reviewer* will underline `user1` and will notify you, that you must give it a value.
+Um dies zu vermeiden, unterstreicht der *Code Reviewer* `user1` und weist uns darauf hin, dass wir ihm einen Wert geben müssen.
 
-If for some reason you absolutely don't want to define a new variable with a value, but you can assure, that the variable will have a value when it's first read, then there's a workaround to define the variable with the [`late`][214] modifier:
+Wenn man aus irgendeinem Grund eine neue Variable unbedingt mit keinem Wert definieren will, wir aber sicher sein können, dass die Variable beim ersten Lesen einen Wert hat, dann gibt es eine Abhilfe, indem wir die Variable mit dem Modifikator [`late`][214] definieren:
 
 ```dart
 late User user1;
@@ -121,7 +133,7 @@ user1 = User( // variable gets value before reading it
 print(user1.name); // Moritz
 ```
 
-Or you could define the variable nullable by using the `?` null-aware operator.
+Oder wir können auch die Variable nullable definieren, indem wir den null-aware Operator `?` verwenden.
 
 ```dart
 User? user1; // this means, that user1 is nullable
@@ -140,8 +152,9 @@ user1 = User(
 print(user1!.name); // Moritz
 ```
 
-It is not `null` that is bad, it is having `null` go where you don’t expect it that causes problems.\
-You only need to manage this situation wisely: by either using the `!` operator, if, in the place, you want to use this variable, it is not containing `null` anymore.
+Nicht `null` ist schlecht, sondern die Tatsache, dass `null` dort auftaucht, wo man es nicht erwartet, verursacht Probleme.\
+Wir müssen diese Situation nur klug handhaben!\
+Entweder mit dem Operator `!`, wenn die Variable an der Stelle, an der man sie verwenden will, sicher nicht mehr `null` enthält:
 
 ```dart
 String? s;
@@ -149,7 +162,7 @@ s = "hello"; // variable gets value before reading it
 print(s!); // ! means: trust me, s has a value other than null
 ```
 
-Or implement different actions if the variable's value is `null` or not.
+Oder durch die Implementierung verschiedener Aktionen, wenn der Wert der Variablen `null` ist oder nicht:
 
 ```dart
 print(s ?? "hello"); // print s, but if s is null, then print "hello"
@@ -161,7 +174,7 @@ if (s != null) {
 }
 ```
 
-So depending on the situation, there are different possibilities to set a non-nullable variable with a nullable one:
+Je nach Situation gibt es also verschiedene Möglichkeiten, eine non-nullable Variable durch eine nullable zu ersetzen:
 
 ```dart
 int? aNullableInt;
@@ -190,9 +203,9 @@ var someOtherVariable = aNonNullableInt!;
 if (aNonNullableInt != null)
 ```
 
-For more information about *sound null safety in Flutter* you can either read the [**Dart pages**][215] or the [**Flutter pages**][216].
+Für weitere Informationen über *Sound null-safety in Flutter* kannst du entweder die [**Dart Seiten**][215] oder die [**Flutter Seiten**][216] lesen.
 
-# Asynchronous Programming
+# Asynchrone Programmierung
 
 [<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" width="20" /> **Isolates and Event Loops**](https://youtu.be/vl_AaCgudcY)\
 [<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" width="20" /> **Futures**](https://youtu.be/OTS-ap9_aXc)\

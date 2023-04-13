@@ -116,18 +116,29 @@ Im Welcome Screen von Android Studio auf **Open** drücken und den Ordner: `/con
 ## Android Studio Personalisierung
 
 In den **Einstellungen**:
-```dart
+```
+Appearance & Behavior
+└───System Settings
+    └───Autosave
+            ☑ Save files if the IDE is idle
 Editor
-┣ General
-┃ ┗ Code Folding
-┃   ┗ General : // setze einen Haken bei *Documentation comments* und *Method bodies*
-┣ Font : // *Enable font ligatures*
-┣ Code Style
-┃ ┗ Dart
-┃   ┗ Line length: 200
+├───General
+│   └───Code Folding
+│       └───General
+│               ☑  Documentation comments
+│               ☑  Method bodies
+├───Font
+│       ☑ Enable font ligatures
+└───Code Style
+    └───Dart
+            Line length: 200
 Languages & Frameworks
-┗ Flutter
-  ┗ Editor : // setze einen Haken bei *Format code on save* und *Organize imports on save*
+└───Flutter
+    ├───App Execution
+    │       ☑ Perform hot reload on save
+    └───Editor
+            ☑ Format code on save
+            ☑ Organize imports on save
 ```
 
 ## Android Gerät vorbereiten

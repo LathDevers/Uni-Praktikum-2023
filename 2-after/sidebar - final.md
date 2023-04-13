@@ -34,5 +34,6 @@
 
 - Datentypen, Datenstrukturen
 - Klassen
-- Commenting
+- Kommentierung
 - Sound null-safety
+- Asynchrone Programmierung
