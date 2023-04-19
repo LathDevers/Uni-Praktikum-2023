@@ -147,7 +147,7 @@ Nutze die Hilfe-Funktion, um dir alle verfügbaren Befehle anzeigen zu lassen un
 1. **SonicCoach Sub-App**: Verwende die Sonification Anwendung in der BI-Vital-App, indem du den Brustgurt des BI-Vital am Körper trägst und deine Rückreise vom CITEC aufzeichnest. Die Musikgeschwindigkeit soll sich entsprechend deines Pulses ändern. Konfiguriere die Anwendung entsprechend.
 
 <p align="center">
-  <img src="img/soniccoach.png" width="30%">
+  <img src="img/soniccoach.png" width="20%">
 </p>
 
 1. **EKG-Aufzeichnung**: Starte eine EKG-Messung auf dem BI-Vital und erfasse dabei nur das EKG-Signal und die Herzfrequenz. Führe während der Messung unterschiedliche Aktivitäten durch, die zu einer Veränderung der Herzfrequenz führen, z.B. Laufen oder Ruhephasen. Lade anschließend die Messwerte vom BI-Vital herunter und verwende eine Programmiersprache deiner Wahl, um die Daten einzulesen und anhand des EKG-Signals eine Berechnung der Herzfrequenz durchzuführen und somit die vom BI-Vital berechneten Herzfrequenzen zu reproduzieren.
