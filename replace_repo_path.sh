@@ -25,7 +25,11 @@ do
     fi
 done
 
-echo "Done!"
+if [ -z "$(ls $folder_path/*.md 2>/dev/null)" ]; then
+    echo "No markdown files found!"
+else
+    echo "Done!"
+fi
 
 #https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/
 #https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/flutter-training/raw/master/src/
