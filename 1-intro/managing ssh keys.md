@@ -165,4 +165,4 @@ Host gitlab.com
 
 ---
 
-[*<< Vorherige Seite*](introduction-to-git) | [🏠](home)
+[*<< Vorherige Seite*](introduction-to-git) | [*Nächste Seite >>*](set-up-flutter-sdk)

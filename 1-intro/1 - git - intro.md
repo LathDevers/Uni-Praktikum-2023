@@ -19,13 +19,13 @@ Vorteile sind u. a.:
 
 Und noch viele mehr.
 
-> <img align="left" src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/SCR-20230302-pzrj.jpeg" width="10%"/> Eine sehr ausführliche Einführung in die Arbeit mit Git bietet das kostenlose E-book [**Pro Git**](https://git-scm.com/book/en/v2) von Scott Chacon!
+> <img align="left" src="https://github.com/LathDevers/flutter-training/blob/master/src/SCR-20230302-pzrj.jpeg" width="10%"/> Eine sehr ausführliche Einführung in die Arbeit mit Git bietet das kostenlose E-book [**Pro Git**](https://git-scm.com/book/en/v2) von Scott Chacon!
 > <br clear="left"/>
 >
 > Es gibt darüber hinaus auch viele [**Cheat Sheets**](https://education.github.com/git-cheat-sheet-education.pdf).
 
 <img
-src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/20220802_165310.jpg"
+src="https://github.com/LathDevers/flutter-training/blob/master/src/20220802_165310.jpg"
 min-width="100"
 width="50%"
 />
@@ -45,16 +45,16 @@ Für euch ist es nur wichtig zu wissen, dass euer lokales Projekt immer eine **v
 
 Für Informationen zur Installation sollte die [**git Webseite**](https://git-scm.com/) zu Rate gezogen werden.
 
-![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/SCR-20230302-pkbk-2.png)
+![](https://github.com/LathDevers/flutter-training/blob/master/src/SCR-20230302-pkbk-2.png)
 
-![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/SCR-20230302-popq.png)
+![](https://github.com/LathDevers/flutter-training/blob/master/src/SCR-20230302-popq.png)
 
 > Es gibt natürlich eine Vielzahl an grafischen Tools und Helferlein, die sich gegenseitig mit Features für den Anwender übertrumpfen. Wenn ihr mit Git vertraut seid, könnt ihr gerne auch mit solchen Tools arbeiten.
 >
 > Android Studio verfügt allerdings über eine eingebaute UI für Git.
 
 <img
-src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/Screenshot 2023-03-03 at 08.21.14.png"
+src="https://github.com/LathDevers/flutter-training/blob/master/src/Screenshot 2023-03-03 at 08.21.14.png"
 />
 
 ## Vor der ersten Verwendung

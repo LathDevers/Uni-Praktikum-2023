@@ -60,7 +60,7 @@ Um das Beispielpackage, `css_colors`, zur App hinzufügen:
 
 Der **Installations*****tab***, der auf jeder Paketseite auf [**pub.dev**](https://pub.dev "The official package repository for Dart and Flutter apps.") zu finden ist, ist eine praktische Referenz für diese Schritte.
 
-![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/flutter-training/raw/master/src/Screen%20Recording%202022-09-06%20at%2009.27.22.gif)
+![](https://github.com/LathDevers/flutter-training/blob/master/src/Screen%20Recording%202022-09-06%20at%2009.27.22.gif)
 
 Ein vollständiges Beispiel ist im [**css_colors example**](https://docs.flutter.dev/development/packages-and-plugins/using-packages#css-example "Example: Using the css_colors package") zu finden.
 
@@ -71,7 +71,7 @@ Ein vollständiges Beispiel ist im [**css_colors example**](https://docs.flutter
 - welche Plattformen unterstützt werden
 - Metriken wie `Likes` und `Popularity` sind ebenfalls hilfreich
 
-![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/flutter-training/raw/master/src/Screenshot%202022-09-06%20at%2009.18.21.png)
+![](https://github.com/LathDevers/flutter-training/blob/master/src/Screenshot%202022-09-06%20at%2009.18.21.png)
 
 ---
 

@@ -29,15 +29,15 @@ git clone https://github.com/flutter/flutter.git -b stable
 
 In **Systemsteuerung** > **Benutzerkonten** > **Benutzerkonten** tippe auf **Eigene Umgebungsvariablen ändern**.
 
-![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/SCR-20230302-qkpu.png)
+![](https://github.com/LathDevers/flutter-training/blob/master/src/SCR-20230302-qkpu.png)
 
 Überprüfe unter **Benutzervariablen**, ob ein Eintrag namens **Path** existiert.
   - Wenn der Eintrag existiert: füge den vollen Pfad zu `flutter\bin` mit dem `;` Trennzeichen nach existierenden Werten hinzu.
   - Wenn der Eintrag nicht existiert: erstelle eine neue Variable namens `Path` mit dem vollen Pfad zu `flutter\bin`.
 
-![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/SCR-20230302-qmuh.png)
+![](https://github.com/LathDevers/flutter-training/blob/master/src/SCR-20230302-qmuh.png)
 
-![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/SCR-20230302-qmmv.png)
+![](https://github.com/LathDevers/flutter-training/blob/master/src/SCR-20230302-qmmv.png)
 
 > ❗️ Alle vorhandenen Konsolenfenster müssen geschlossen und wieder geöffnet werden, damit diese Änderungen wirksam werden.
 >
@@ -46,7 +46,7 @@ In **Systemsteuerung** > **Benutzerkonten** > **Benutzerkonten** tippe auf **Eig
 # Android Studio installieren
 
 <img
-src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/android-studio.png"
+src="https://github.com/LathDevers/flutter-training/blob/master/src/android-studio.png"
 alt="Android Studio Electric Eel"
 width="60%"
 />
@@ -65,7 +65,7 @@ Später im Wizard kannst du gerne mehr als der vorgeschlagene 2GB RAM wählen.
 
 **Nach der Installation:** Im **Welcome Fenster** wähle *Plugins* auf der linken Seite und lade das **Flutter** und das **Dart** Plugin herunter.
 
-![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/Screenshot%202023-03-02%20at%2019.01.13.png)
+![](https://github.com/LathDevers/flutter-training/blob/master/src/Screenshot%202023-03-02%20at%2019.01.13.png)
 
 [**Hier**](einrichtung-weiteres#android-studio-auf-windows-löschen) findet ihr Informationen darüber, wie ihr Android Studio ordnungsgemäß deinstallieren könnt.
 
@@ -79,7 +79,7 @@ flutter doctor
 
 > 🔍 Dieser Befehl überprüft deine Environment und gibt einen Bericht über den Zustand der Flutter Installation wieder. Checke die Ausgaben aufmerksam Schritt für Schritt. Am Ende solltest du bei allen Punkten Haken haben. Warnings können bleiben (**Chrome** und **Visual Studio Errors** können **unbeachtet** gelassen werden). Meistens hilft es, die error message einfach zu googeln.
 
-![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/SCR-20230302-qqfu.png)
+![](https://github.com/LathDevers/flutter-training/blob/master/src/SCR-20230302-qqfu.png)
 
 | Errormessage | Lösung |
 | - | - |
@@ -158,7 +158,7 @@ Informationen über die Bereitstellung auf einem iPhone ist [**hier**](einrichtu
 
 An dieser Stelle sollte der Projekt Ordner in Android Studio geöffnet werden können, und es soll ähnlich wie hier aussehen:
 
-![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/Screenshot%202023-03-02%20at%2017.49.15.png)
+![](https://github.com/LathDevers/flutter-training/blob/master/src/Screenshot%202023-03-02%20at%2017.49.15.png)
 
 ---
 

@@ -18,7 +18,7 @@ Flutter kann Cross-Platform funktionieren, weil es ein leeres Canvas vom jeweili
 
 |<b>Widget Tree</b>|<b>Row widget</b>|<b>Column widget</b>|
 | :---: | :---: | :---: |
-| <img src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/flutter-training/raw/master/src/sample-flutter-layout.png" alt="Diagram of the widget tree" width="500" /> | <img src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/flutter-training/raw/master/src/row-diagram.png" alt="Aligning widget - Row" /> | <img src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/flutter-training/raw/master/src/column-diagram.png" alt="Aligning widget - Column" /> |
+| <img src="https://github.com/LathDevers/flutter-training/blob/master/src/sample-flutter-layout.png" alt="Diagram of the widget tree" width="500" /> | <img src="https://github.com/LathDevers/flutter-training/blob/master/src/row-diagram.png" alt="Aligning widget - Row" /> | <img src="https://github.com/LathDevers/flutter-training/blob/master/src/column-diagram.png" alt="Aligning widget - Column" /> |
 
 [<img src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" width="13" /> *Source*](https://docs.flutter.dev/development/ui/layout)
 
@@ -52,7 +52,7 @@ Letzendlich ist es zu erwähnen, dass hinter Flutter eine immens große [**Commu
 
 <a href="https://docs.flutter.dev/dash">
   <img
-    src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/flutter-training/raw/master/src/Dashatars.png"
+    src="https://github.com/LathDevers/flutter-training/blob/master/src/Dashatars.png"
     alt="Flutter's Mascot: Dash"
   />
 </a>
