@@ -13,7 +13,7 @@
 - ein Versionsverwaltungsprogramm
 - beliebt und weit verbreitet
 
-In seiner Grundfunktion tut **Git** nichts weiter, als Dateien, die ihr im "gebt",
+In seiner Grundfunktion tut [**Git**](https://git-scm.com/) nichts weiter, als Dateien, die ihr im "gebt",
 zu verwalten, und die Änderungen zwischen verschiedenen Versionen zu registrieren.
 
 Vorteile sind u. a.:
@@ -42,6 +42,10 @@ Für euch ist es nur wichtig zu wissen, dass euer lokales Projekt immer eine **v
 
 **Git kommuniziert nicht automatisch mit dem Server**. Wenn es also neue Änderungen bei euch gibt, oder auf dem Server, dann müsst ihr Git erst darauf hinweisen. (`git pull`, `git push` etc.)
 
+| git | Github | GitLab |
+| :-: | :-: | :-: |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/640px-Git-logo.svg.png" width="100"/> | &nbsp;&nbsp;&nbsp;<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="80"/>&nbsp;&nbsp;&nbsp; | <img src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-500.png" width="100"/> |
+
 ## Installation
 
 Ladet die neueste Version von der [**git Webseite**](https://git-scm.com/) runter und installiert Git.
@@ -53,6 +57,10 @@ Ladet die neueste Version von der [**git Webseite**](https://git-scm.com/) runte
 > Es gibt natürlich eine Vielzahl an grafischen Tools und Helferlein, die sich gegenseitig mit Features für den Anwender übertrumpfen. Wenn ihr mit Git vertraut seid, könnt ihr gerne auch mit solchen Tools arbeiten.
 >
 > Android Studio verfügt allerdings über eine eingebaute UI für Git.
+
+<img
+src="https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/Screenshot 2023-03-03 at 08.21.14.png"
+/>
 
 ## Vor der ersten Verwendung
 
@@ -84,6 +92,10 @@ Daraufhin könnt ihr das repository dann klonen mit:
 > ```bash
 > git clone https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app.git
 > ```
+
+## Verwaltung mehrerer SSH-Schlüssel
+
+Wenn ihr an mehr als einen Git-Dienst pusht (z. B. GitHub und Gitlab oder mehrere Gitlab-Server), könnten [**Informationen über die Verwaltung mehrerer SSH-Schlüssel**](managing-ssh-keys-for-github-and-gitlab) für euch nützlich sein.
 
 ---
 

@@ -65,17 +65,21 @@ width="60%"
 
 Installiere [**Android Studio**][105] ⬇️.
 
-🧑‍🔧 Die standard Installation von Android Studio braucht Adminrechte, sind die nicht vorhanden, kann man alternative die [**Zip Installationsdatei *(No .exe installer)***][105] herunterladen und extrahieren. Im entpackten Ordner, öffne `studio64.exe`, um Android Studio zu starten.
-
-Im Installation Wizard wähle `Custom`. Unter dem `Android SDK location` versichere, dass der ausgewählte Pfad unter deinem Benutzerordner ist. (`C:\Users\<username>\AppData\Local\Android\Sdk`)
+> 🧑‍🔧 Die standard Installation von Android Studio braucht Adminrechte, sind die nicht vorhanden, kann man alternative die [**Zip Installationsdatei *(No .exe installer)***][105] herunterladen und extrahieren. Im entpackten Ordner, öffne `studio64.exe`, um Android Studio zu starten.
+>
+> Im Installation Wizard wähle `Custom`. Unter dem `Android SDK location` versichere, dass der ausgewählte Pfad unter deinem Benutzerordner ist. (`C:\Users\<username>\AppData\Local\Android\Sdk`)
 
 Später im Wizard kannst du gerne mehr als der vorgeschlagene 2GB RAM wählen.
 
 > Anstatt Android Studio kann auch VS Code verwendet werden. Siehe [**Anleitung**][106].
+>
+> Ein paar gute Tipps für Flutter Entwicklung mit VS Code findet ihr [**hier**](einrichtung-weiteres#vs-code-tipps).
 
 **Nach der Installation:** Im **Welcome Fenster** wähle *Plugins* auf der linken Seite und lade das **Flutter** und das **Dart** Plugin herunter.
 
 ![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/Screenshot%202023-03-02%20at%2019.01.13.png)
+
+[**Hier**](einrichtung-weiteres#android-studio-auf-windows-löschen) findet ihr Informationen darüber, wie ihr Android Studio ordnungsgemäß deinstallieren könnt.
 
 ## `flutter doctor` ausführen
 
@@ -150,6 +154,8 @@ Languages & Frameworks
 2. Den [**Google USB Driver**][108] installieren in Android Studio.
 3. Das Handy mit einem USB-Kabel am Computer anschließen. Wenn Sie auf Ihrem Gerät dazu aufgefordert werden, autorisieren Sie den Computer für den Zugriff auf das Gerät.
 4. Führe nun `flutter devices` aus, um zu überprüfen, ob Flutter das angeschlossene Android-Gerät richtig erkannt hat.
+
+Informationen über die Bereitstellung auf einem iPhone ist [**hier**](einrichtung-weiteres#deploy-to-ios-devices-link) zu finden. Aber denkt daran, dass ihr dafür einen Mac benötigt.
 
 ### Virtuelles Gerät (Emulator)
 

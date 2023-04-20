@@ -8,7 +8,7 @@
 ---
 
 [**Git**](https://git-scm.com/) ist ein kostenloses und open-source Versionsverwaltungsprogramm, das unter Softwareentwicklern sehr beliebt und weit verbreitet ist.\
-In seiner Grundfunktion tut **Git** nichts weiter, als Dateien, die ihr im "gebt",
+In seiner Grundfunktion tut [**Git**](https://git-scm.com/) nichts weiter, als Dateien, die ihr im "gebt",
 zu verwalten, und die Änderungen zwischen verschiedenen Versionen zu registrieren.
 
 Vorteile sind u. a.:
@@ -87,6 +87,10 @@ Daraufhin könnt ihr das repository dann klonen mit:
 > ```bash
 > git clone https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app.git
 > ```
+
+## Verwaltung mehrerer SSH-Schlüssel
+
+Wenn ihr an mehr als einen Git-Dienst pusht (z. B. GitHub und Gitlab oder mehrere Gitlab-Server), könnten [**Informationen über die Verwaltung mehrerer SSH-Schlüssel**](managing-ssh-keys-for-github-and-gitlab) für euch nützlich sein.
 
 ## Arbeiten mit Branches
 

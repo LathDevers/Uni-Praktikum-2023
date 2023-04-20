@@ -10,7 +10,7 @@
 
 # Einrichtung der Flutter SDK
 
-Wenn etwas unklar ist, wendet euch bitte an die offizielle Dokumentation:
+Die ausführliche, englischsprachige Dokumentation zur Einrichtung befindet sich auf der offiziellen Webseite:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://flutter.dev/docs/get-started/install/windows">
@@ -65,17 +65,21 @@ width="60%"
 
 Installiere [**Android Studio**][105] ⬇️.
 
-🧑‍🔧 Die standard Installation von Android Studio braucht Adminrechte, sind die nicht vorhanden, kann man alternative die [**Zip Installationsdatei *(No .exe installer)***][105] herunterladen und extrahieren. Im entpackten Ordner, öffne `studio64.exe`, um Android Studio zu starten.
-
-Im Installation Wizard wähle `Custom`. Unter dem `Android SDK location` versichere, dass der ausgewählte Pfad unter deinem Benutzerordner ist. (`C:\Users\<username>\AppData\Local\Android\Sdk`)
+> 🧑‍🔧 Die standard Installation von Android Studio braucht Adminrechte, sind die nicht vorhanden, kann man alternative die [**Zip Installationsdatei *(No .exe installer)***][105] herunterladen und extrahieren. Im entpackten Ordner, öffne `studio64.exe`, um Android Studio zu starten.
+> 
+> Im Installation Wizard wähle `Custom`. Unter dem `Android SDK location` versichere, dass der ausgewählte Pfad unter deinem Benutzerordner ist. (`C:\Users\<username>\AppData\Local\Android\Sdk`)
 
 Später im Wizard kannst du gerne mehr als der vorgeschlagene 2GB RAM wählen.
 
-> Wenn ihr mögt, könnt ihr auch VS Code benutzen, aber im Praktikum werden wir Android Studio verwenden. Die Vorgehensweise ist jedoch sehr ähnlich. Siehe [**Anleitung**][106].
+> Anstatt Android Studio kann auch VS Code verwendet werden. Siehe [**Anleitung**][106].
+>
+> Ein paar gute Tipps für Flutter Entwicklung mit VS Code findet ihr [**hier**](einrichtung-weiteres#vs-code-tipps).
 
 **Nach der Installation:** Im **Welcome Fenster** wähle *Plugins* auf der linken Seite und lade das **Flutter** und das **Dart** Plugin herunter.
 
 ![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/Screenshot%202023-03-02%20at%2019.01.13.png)
+
+[**Hier**](einrichtung-weiteres#android-studio-auf-windows-löschen) findet ihr Informationen darüber, wie ihr Android Studio ordnungsgemäß deinstallieren könnt.
 
 ## `flutter doctor` ausführen
 
@@ -111,21 +115,60 @@ Im Welcome Screen von Android Studio auf **Open** drücken und den Ordner: `/con
 >
 > File > Settings > Language & Frameworks > Flutter > SDK
 >
-> und setze den Pfad zum Flutter SDK Repo aus Schritt 2 (z. B., `C:\path\to\flutter`).
+> und setze den Pfad zum Flutter SDK Repo aus Schritt 2 (z. B., `C:\Users\<your-user-name>\Documents\flutter`).
 
-In den Einstellungen öffne **Languages & Frameworks** > **Dart**, aktiviere **Dart support für das Projekt** und tippe den Pfad zu Dart ein. (`flutter doctor` installiert Dart automatisch unter `C:\path\to\flutter\bin\cache\dart-sdk`)
+## Android Studio Personalisierung
+
+In den **Einstellungen**:
+```
+Appearance & Behavior
+└───System Settings
+    └───Autosave
+            ☑ Save files if the IDE is idle
+Editor
+├───General
+│   └───Code Folding
+│       └───General
+│               ☑  Documentation comments
+│               ☑  Method bodies
+├───Font
+│       ☑ Enable font ligatures
+└───Code Style
+    └───Dart
+            Line length: 200
+Languages & Frameworks
+└───Flutter
+    ├───App Execution
+    │       ☑ Perform hot reload on save
+    └───Editor
+            ☑ Format code on save
+            ☑ Organize imports on save
+```
 
 ## Android Gerät vorbereiten
+
+### Physisches Gerät
 
 1. **Entwickleroptionen** und **USB debugging** auf dem Gerät aktivieren.
    - Wenn das **Entwickleroptionen** Menü in den OS Einstellungen nicht zu finden ist, muss es vorher aktiviert werden. Dazu die Buildnummer (unter Telefoninfo, evtl Softwareinformationen) 7 Mal antippen. Siehe [**Dokumentation**][107].
 2. Den [**Google USB Driver**][108] installieren in Android Studio.
-3. Das Handy mit einem USB-Kabel am Computer anschließen. Wenn du auf deinem Gerät dazu aufgefordert wirst, autorisiere den Computer für den Zugriff auf das Gerät.
+3. Das Handy mit einem USB-Kabel am Computer anschließen. Wenn Sie auf Ihrem Gerät dazu aufgefordert werden, autorisieren Sie den Computer für den Zugriff auf das Gerät.
 4. Führe nun `flutter devices` aus, um zu überprüfen, ob Flutter das angeschlossene Android-Gerät richtig erkannt hat.
+
+Informationen über die Bereitstellung auf einem iPhone ist [**hier**](einrichtung-weiteres#deploy-to-ios-devices-link) zu finden. Aber denkt daran, dass ihr dafür einen Mac benötigt.
+
+### Virtuelles Gerät (Emulator)
+
+1. **Android Studio** > **Tools** > **Device Manager**
+2. **Virtual** tab
+3. **Create device**
+4. Choose hardware
+5. Download current stable system image *(API 33 arm64 v8a - Android 13.0)*
+6. Finish
 
 ---
 
-Stellt euch sicher, dass ihr den Projekt Ordner in Android Studio öffnen könnt, und etwas ähnliches seht, wie hier:
+An dieser Stelle sollte der Projekt Ordner in Android Studio geöffnet werden können, und es soll ähnlich wie hier aussehen:
 
 ![](https://gitlab.ub.uni-bielefeld.de/biomechatronik-praktikum-23/control-app/raw/main/docs/wiki-src/Screenshot%202023-03-02%20at%2017.49.15.png)
 
