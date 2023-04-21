@@ -123,7 +123,7 @@ Editor
 │       ☑ Enable font ligatures
 └───Code Style
     └───Dart
-            Line length: 200
+            Line length: 180
 Languages & Frameworks
 └───Flutter
     ├───App Execution

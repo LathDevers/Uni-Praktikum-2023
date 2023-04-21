@@ -32,18 +32,17 @@
 
 > ```dart
 > {
->     "workbench.colorTheme": "Default Dark+",
 >     "workbench.startupEditor": "none",
 >     "dart.hotReloadOnSave": "all", // Triggers Hot Reload on save
 >     "dart.flutterHotReloadOnSave": "all", // Triggers Hot Reload on save
 >     "dart.previewFlutterUiGuides": true // enable Widget child-parent connection lines
->     "dart.lineLength": 200, // maximum characters in a line, otherwise use word wrap
+>     "dart.lineLength": 180, // maximum characters in a line, otherwise use word wrap
 >     // don't forget to also set ruler below
 >     "[dart]": {
 >         "editor.formatOnSave": true, // Code formatting on save
 >         "editor.formatOnType": true,
 >         "editor.rulers": [
->             200
+>             180
 >         ],
 >         "editor.selectionHighlight": false,
 >         "editor.suggest.snippetsPreventQuickSuggestions": false,
