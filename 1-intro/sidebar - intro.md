@@ -29,10 +29,6 @@
 - DartPad Tutorial: *create simple Widgets*
 - Neues Modul entwerfen
 
-## [**Weiteres**](miscellaneous)
-
-- Aufbau des Projektes
-
 ## [**Backend**](backend)
 
 - Datentypen, Datenstrukturen
@@ -40,3 +36,7 @@
 - Kommentierung
 - Sound null-safety
 - Asynchrone Programmierung
+
+## [**Weiteres**](miscellaneous)
+
+- Aufbau des Projektes

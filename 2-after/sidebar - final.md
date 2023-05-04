@@ -2,16 +2,16 @@
 
 ---
 
-## [**Git**](introduction-to-git)
+## [**Git Intro**](introduction-to-git)
 
 - [Git Theorie](introduction-to-git#git)
 - [Git herunterladen und installieren](introduction-to-git#installation)
 - [`user.name` und `user.email` aktualisieren](introduction-to-git#vor-der-ersten-verwendung)
 - [Das `Biomechatronik Praktikum` Gitlab Repository klonen](introduction-to-git#das-repository-klonen)
 
-##### [**Managing SSH keys for Github and Gitlab**](managing-ssh-keys-for-github-and-gitlab)
+##### [**SSH-Schlüssel für GitHub und GitLab verwalten**](managing-ssh-keys-for-github-and-gitlab)
 
-## [**Setup Flutter**](set-up-flutter-sdk)
+## [**Flutter Einrichtung**](set-up-flutter-sdk)
 
 - [Flutter SDK herunterladen](set-up-flutter-sdk#flutter-sdk-herunterladen)
 - [Flutter zur Umgebungsvariable `PATH` hinzufügen](set-up-flutter-sdk#den-pfad-aktualisieren)
@@ -21,22 +21,15 @@
 
 ##### [Android Studio löschen](einrichtung-weiteres#android-studio-auf-windows-löschen)
 ##### [VSCode Tipps](einrichtung-weiteres#vs-code-tipps)
-##### [Deploy to iPhone](einrichtung-weiteres#deploy-to-ios-devices-link)
+##### [Bereitstellen auf dem iPhone](einrichtung-weiteres#deploy-to-ios-devices-link)
 
-## [**Intro to Flutter**](my-first-flutter-app)
+## [**Einführung in Flutter**](my-first-flutter-app)
 
 - Was ist **Flutter** und **Dart**?
 - DartPad Tutorial: *create simple Widgets*
 - Neues Modul entwerfen
 
-## [**Project requirements**](project-management)
-
-## [**Weiteres**](miscellaneous)
-
-- Aufbau des Projektes
-- Galeriebild
-- Spracheneinstellungen
-- Neues Package hinzufügen
+##### [Flutter Architekturansicht](flutter-architectural-overview)
 
 ## [**Backend**](backend)
 
@@ -45,3 +38,12 @@
 - Kommentierung
 - Sound null-safety
 - Asynchrone Programmierung
+
+## [**Weiteres**](miscellaneous)
+
+- Aufbau des Projektes
+- Galeriebild
+- Spracheneinstellungen
+- Neues Package hinzufügen
+
+## [**Projektmanagement**](project-management)

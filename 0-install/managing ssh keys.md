@@ -1,7 +1,7 @@
 In this guide, we will
-1. first [**generate an SSH key for GitHub**](#generate-a-new-ssh-key-for-github) and [**register it in our GitHub account**](add-the-ssh-key-to-your-github-account) then
-2. [**generate another SSH key for GitLab**](generate-a-new-ssh-key-for-gitlab) and [**register it in our GitLab account**](add-the-public-ssh-key-to-your-gitlab-account) and finally
-3. [**set up a config file**](set-up-an-ssh-config-file) that will manage which SSH key to use in different scenarios.
+1. first [**generate an SSH key for GitHub**](#generate-a-new-ssh-key-for-github) and [**register it in our GitHub account**](#add-the-ssh-key-to-your-github-account) then
+2. [**generate another SSH key for GitLab**](#generate-a-new-ssh-key-for-gitlab) and [**register it in our GitLab account**](#add-the-public-ssh-key-to-your-gitlab-account) and finally
+3. [**set up a config file**](#set-up-an-ssh-config-file) that will manage which SSH key to use in different scenarios.
 
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" width="15"/> **Source**](https://gist.github.com/marcoandre1/4b0fbca83104e08d3e729a25a0cba4eb)
 

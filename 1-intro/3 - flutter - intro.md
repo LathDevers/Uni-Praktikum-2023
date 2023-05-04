@@ -1,14 +1,4 @@
-[**Flutter**][016] ist ein Open-Source Cross-Platform Software Development Kit (SDK), das die Programmiersprache [**Dart**][001] verwendet. 
-
-### Dart
-
-Dart ist eine rein objektorientierte Sprache, da alle Objekte Instanzen von Klassen sind. Aber Dart erfordert nicht, dass der gesamte Code innerhalb einer Klasse definiert wird - es können Variablen, Konstanten und Funktionen auf oberster Ebene definieren, ähnlich wie in einer prozeduralen oder funktionalen Sprache.
-
-*Es gibt ein interessantes Paket namens [**fpdart**](https://pub.dev/packages/fpdart), das funktionale Programmiereigenschaften in Dart ermöglicht.*
-
-Dart ist eine Garbage-Collected-Sprache mit einer C-ähnlichen Syntax.
-
-[<img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Dart_logo.png" width="20" /> **Einführung in Dart**](https://dart.dev/language)
+[**Flutter**][016] ist ein Open-Source Cross-Platform Software Development Kit (SDK), das die Programmiersprache [**Dart**][001] verwendet.
 
 Da sowohl Flutter als auch Dart von Google betreut und gesponsert wird, sind beide weltweit benutzt und sehr gründlich dokumentiert. Der Basis Code ist ohne größere Anpassungen auf **Android**, **iOS**, **Web**, **Windows**, **macOS** und **Linux** mit nativ-naher Performanz lauffähig, weil Dart den Code zur nativen Maschinencode (Kotlin, Swift usw.) auf Mobile und Desktop, sowie zu JavaScript auf dem Web kompiliert.
 
@@ -21,10 +11,6 @@ Flutter kann Cross-Platform funktionieren, weil es ein leeres Canvas vom jeweili
 | <img src="https://github.com/LathDevers/flutter-training/blob/master/src/sample-flutter-layout.png" alt="Diagram of the widget tree" width="500" /> | <img src="https://github.com/LathDevers/flutter-training/blob/master/src/row-diagram.png" alt="Aligning widget - Row" /> | <img src="https://github.com/LathDevers/flutter-training/blob/master/src/column-diagram.png" alt="Aligning widget - Column" /> |
 
 [<img src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" width="13" /> *Source*](https://docs.flutter.dev/development/ui/layout)
-
-Die App kann in der Entwicklungsphase schnell mit [**Stateful Hot Reload**][003] aktualisiert werden, so dass der aktuelle App Zustand und die User Daten bewahrt werden. Wenn die Änderungen den Widget-tree oder den Appzustand zu sehr beeinflussen, kann man statt Hot Reload das **Hot Restart** benutzen, das zwar ein bisschen länger dauert, weil es die Änderungen einlädt, die App neustartet und den Zustand resettet, es ist doch schneller, als ein kompletter Neustart.
-
-[<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" width="20" /> **Hot reload**](https://youtu.be/sgPQklGe2K8)
 
 [**Flutter 2.0.0**][004] wurde in *März 2021* veröffentlicht und hat u. a. die folgenden Updates gebracht:
  - [**sound null safety**][005],
@@ -39,8 +25,6 @@ Die App kann in der Entwicklungsphase schnell mit [**Stateful Hot Reload**][003]
 - Schaue dich auch Andrea Bizzottos [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" width="15"/> **"Flutter tips & tricks" GitHub Repo**][017] an.
 - [**Kindacode**](https://www.kindacode.com) bietet kostenlose, qualitativ hochwertige Entwicklungs-Tutorials für viele Programmiersprachen und IDEs.
 - Das [<img src="https://raw.githubusercontent.com/wappalyzer/wappalyzer/79af19df7727225962add5467e247f044e4c2c94/src/drivers/webextension/images/icons/Dart.svg" width="16" /> **Dart cheatsheet**](https://dart.dev/guides/language/cheatsheet "Dart cheatsheet") fasst Syntaxen für häufig verwendeten Features zusammen.
-- [**Using packages**][109]; Packages durchstöbern geht auf [**pub.dev**](https://pub.dev) oder auch auf [**Flutter Gems**](https://fluttergems.dev/ "Flutter Gems - A Curated List of Dart & Flutter packages").
-- Offizielle, regelmäßig aktualisierte [**Google.dev packages**](https://pub.dev/publishers/google.dev/packages "Packages of publisher google.dev"). Wenn möglich, benutze diese Packages.
 - Für mich war es eine große Hilfe, Videos auf dem [<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" width="20" /> **Youtube-Kanal von Flutter**](https://www.youtube.com/c/flutterdev "Flutter YouTube channel") anzuschauen. Vor allem die Playlist [**Package of the Week**](https://www.youtube.com/watch?v=JSqUZFkRLr8&list=PLjxrf2q8roU1quF6ny8oFHJ2gBdrYN_AK) war manchmal eine große Inspiration. Für Anfänger könnte die Playlist [**Begin learning Flutter**](https://www.youtube.com/watch?v=4AoFA19gbLo&list=PLjxrf2q8roU3wk7CDw4RfV3mEwOJbjx1k) ein guter Start sein.
 - [<img src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" width="13" /> **Flutter codelabs page**](https://flutter.dev/docs/codelabs "Flutter codelabs page")
 
@@ -117,6 +101,10 @@ Dafür ist das letzte Element in der Liste in der `lib\src\moduleslist\src\modul
 
 ## Hot reload
 
+Die App kann in der Entwicklungsphase schnell mit [**Stateful Hot Reload**][003] aktualisiert werden, so dass der aktuelle App Zustand und die User Daten bewahrt werden. Wenn die Änderungen den Widget-tree oder den Appzustand zu sehr beeinflussen, kann man statt Hot Reload das **Hot Restart** benutzen, das zwar ein bisschen länger dauert, weil es die Änderungen einlädt, die App neustartet und den Zustand resettet, es ist doch schneller, als ein kompletter Neustart.
+
+[<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" width="20" /> **Hot reload**](https://youtu.be/sgPQklGe2K8)
+
 - hilft schnell und einfach zu experimentieren, Benutzeroberflächen zu erstellen, Funktionen hinzuzufügen und Fehler zu beheben
 - injiziert aktualisierte Quellcode-Dateien in die laufende Dart-VM
 - Nachdem die VM die Klassen mit den neuen Versionen der Felder und Funktionen aktualisiert hat, baut das Flutter-Framework den Widget-Tree automatisch neu auf.
@@ -131,4 +119,4 @@ Was ist der Unterschied zwischen Hot Reload, Hot Restart und Full Restart?
 
 ---
 
-[*<< Vorherige Seite*](set-up-flutter-sdk) | [*Nächste Seite >>*](miscellaneous)
+[*<< Vorherige Seite*](set-up-flutter-sdk) | [*Nächste Seite >>*](backend)

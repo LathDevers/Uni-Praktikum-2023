@@ -56,4 +56,4 @@ LSB: `B` | `G` | `R` (no PWM)
 
 ---
 
-[*<< Vorherige Seite*](my-first-flutter-app) | [*Nächste Seite >>*](miscellaneous)
+[*<< Vorherige Seite*](miscellaneous) | [🏠](home)

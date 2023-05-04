@@ -21,14 +21,14 @@ min-width="100"
 width="50%"
 />
 
-## Gitlab
+## GitLab
 
-Wir verwenden Git im Zusammenhang mit einem Git Server. Der Server ist in unserem Fall der Gitlab Server der Uni Bielefeld.
+Wir verwenden Git im Zusammenhang mit einem Git Server. Der Server ist in unserem Fall der GitLab Server der Uni Bielefeld.
 Für euch ist es nur wichtig zu wissen, dass euer lokales Projekt immer eine **vollständige** Kopie des Projektes auf der Serverseite ist. Ihr verfügt also immer über alle Daten und Dateien.
 
 **Git kommuniziert nicht automatisch mit dem Server**. Wenn es also neue Änderungen bei euch gibt, oder auf dem Server, dann müsst ihr Git erst darauf hinweisen. (`git pull`, `git push` etc.)
 
-| git | Github | GitLab |
+| git | GitHub | GitLab |
 | :-: | :-: | :-: |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/640px-Git-logo.svg.png" width="100"/> | &nbsp;&nbsp;&nbsp;<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="80"/>&nbsp;&nbsp;&nbsp; | <img src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-500.png" width="100"/> |
 
@@ -81,7 +81,7 @@ Daraufhin könnt ihr das repository dann klonen mit:
 
 ## Verwaltung mehrerer SSH-Schlüssel
 
-Wenn ihr an mehr als einen Git-Dienst pusht (z. B. GitHub und Gitlab oder mehrere Gitlab-Server), könnten [**Informationen über die Verwaltung mehrerer SSH-Schlüssel**](managing-ssh-keys-for-github-and-gitlab) für euch nützlich sein.
+Wenn ihr an mehr als einen Git-Dienst pusht (z. B. GitHub und GitLab oder mehrere GitLab-Server), könnten [**Informationen über die Verwaltung mehrerer SSH-Schlüssel**](managing-ssh-keys-for-github-and-gitlab) für euch nützlich sein.
 
 ## Arbeiten mit Branches
 
@@ -92,7 +92,7 @@ Wenn ihr mit Git arbeitet, empfiehlt es sich, Arbeiten **niemals** direkt im Mas
 Andernfalls kann es auch schnell einmal passieren, dass ihr nur "eine kleine Änderung" einschiebt, und euer Projekt anschließend nicht mehr funtioniert.
 Also vermeidet das, bitte.
 
-Branches erstellt ihr im Projekt über die Gitlab Weboberfläche, nachdem ihr ein Issue zu einem konkreten Anliegen erstellt habt.
+Branches erstellt ihr im Projekt über die GitLab Weboberfläche, nachdem ihr ein Issue zu einem konkreten Anliegen erstellt habt.
 
 > Ein Branch ist immer die Grundlage für eure Beiträge zum Projekt!
 > Arbeitet niemals im master-Branch!
@@ -140,7 +140,7 @@ Eine Liste der Branches auf dem remote Server liefert:
 git branch --remote
 ```
 
-Hier tauchen dann z.B. auch die branches auf, die ihr über die Gitlab Oberfläche
+Hier tauchen dann z.B. auch die branches auf, die ihr über die GitLab Oberfläche
 erstellt habt. Um auf einen dieser branches zu wechseln verwendet ihr:
 
 ```bash
@@ -211,9 +211,9 @@ Beachtet, dass nur Änderungen, die ihr als "commits" in die Projekthistorie
 aufgenommen habt, auf dem Server landen.
 
 Wenn ihr der Meinung seid, dass ihr ein Issue vollständig bearbeitet habt und
-das Problem behoben wurde, öffnet ihr die Gitlab Weboberfläche und navigiert
+das Problem behoben wurde, öffnet ihr die GitLab Weboberfläche und navigiert
 zu eurem Merge-Request. Dort drückt ihr auf den Knopf "Resolve VIP Status", und
-folgt dann den Anweisungen in Gitlab.
+folgt dann den Anweisungen in GitLab.
 
 ---
 

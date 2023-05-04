@@ -1,3 +1,9 @@
+Dart ist eine rein objektorientierte Sprache, da alle Objekte Instanzen von Klassen sind. Aber Dart erfordert nicht, dass der gesamte Code innerhalb einer Klasse definiert wird - es können Variablen, Konstanten und Funktionen auf oberster Ebene definieren, ähnlich wie in einer prozeduralen oder funktionalen Sprache.
+
+*Es gibt ein interessantes Paket namens [**fpdart**](https://pub.dev/packages/fpdart), das funktionale Programmiereigenschaften in Dart ermöglicht.*
+
+Dart ist eine Garbage-Collected-Sprache mit einer C-ähnlichen Syntax.
+
 In Flutter sind Backend und Frontend sehr eng ineinander integriert. Hier werden die beiden Layers nicht voneinander separiert entwickelt (z. B. Android [**XML Dateien**][316]).
 
 [<img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Dart_logo.png" width="20" /> **Einführung in Dart**](https://dart.dev/language)
@@ -45,7 +51,7 @@ class User {
   User(this.name, [this.age = 24, this.height]);
   String name; // positioned, not optional
   int age; // positioned, optional, non-nullable but initialized
-  double? height; // positioned, optional, is not initialized but nullable
+  double? height; // positioned, optional, not initialized but nullable
 }
 
 List<User> users = [
@@ -215,7 +221,7 @@ Für weitere Informationen über *Sound null-safety in Flutter* kannst du entwed
 
 ---
 
-[*<< Vorherige Seite*](miscellaneous) | [🏠](home)
+[*<< Vorherige Seite*](my-first-flutter-app) | [*Nächste Seite >>*](miscellaneous)
 
 [203]: https://medium.com/flutter-community/dart-what-are-mixins-3a72344011f3 "Dart: What are mixins? It's a kind of magic"
 [204]: https://medium.com/flutterdevs/mixins-in-dart-how-to-use-it-90d078e722d3 "Mixins in Dart: How to use it"

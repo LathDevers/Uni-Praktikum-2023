@@ -3,7 +3,7 @@
 - [ ] Sich ein wenig mit Git auseinandersetzen. [🔗](#git)
 - [ ] Git herunterladen und installieren. [🔗](#installation)
 - [ ] `user.name` und `user.email` aktualisieren. [🔗](#vor-der-ersten-verwendung)
-- [ ] Das Gitlab Projekt-Repository klonen. [🔗](#das-repository-klonen)
+- [ ] Das GitLab Projekt-Repository klonen. [🔗](#das-repository-klonen)
 
 ---
 
@@ -35,14 +35,14 @@ min-width="100"
 width="50%"
 />
 
-## Gitlab
+## GitLab
 
-Wir verwenden Git im Zusammenhang mit einem Git Server. Der Server ist in unserem Fall der Gitlab Server der Uni Bielefeld.
+Wir verwenden Git im Zusammenhang mit einem Git Server. Der Server ist in unserem Fall der GitLab Server der Uni Bielefeld.
 Für euch ist es nur wichtig zu wissen, dass euer lokales Projekt immer eine **vollständige** Kopie des Projektes auf der Serverseite ist. Ihr verfügt also immer über alle Daten und Dateien.
 
 **Git kommuniziert nicht automatisch mit dem Server**. Wenn es also neue Änderungen bei euch gibt, oder auf dem Server, dann müsst ihr Git erst darauf hinweisen. (`git pull`, `git push` etc.)
 
-| git | Github | GitLab |
+| git | GitHub | GitLab |
 | :-: | :-: | :-: |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/640px-Git-logo.svg.png" width="100"/> | &nbsp;&nbsp;&nbsp;<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="80"/>&nbsp;&nbsp;&nbsp; | <img src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-500.png" width="100"/> |
 
@@ -95,7 +95,7 @@ Daraufhin könnt ihr das repository dann klonen mit:
 
 ## Verwaltung mehrerer SSH-Schlüssel
 
-Wenn ihr an mehr als einen Git-Dienst pusht (z. B. GitHub und Gitlab oder mehrere Gitlab-Server), könnten [**Informationen über die Verwaltung mehrerer SSH-Schlüssel**](managing-ssh-keys-for-github-and-gitlab) für euch nützlich sein.
+Wenn ihr an mehr als einen Git-Dienst pusht (z. B. GitHub und GitLab oder mehrere GitLab-Server), könnten [**Informationen über die Verwaltung mehrerer SSH-Schlüssel**](managing-ssh-keys-for-github-and-gitlab) für euch nützlich sein.
 
 ---
 
